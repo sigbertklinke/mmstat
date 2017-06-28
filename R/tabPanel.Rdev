@@ -1,0 +1,21 @@
+widgetTabBox(..., help=NULL, data=NULL, id = NULL, selected = NULL, title = NULL, width = 12, height = NULL, side = 'left', lang = NULL) {
+	env   <- widget(id, lang)
+	args  <-                  
+	
+}
+
+tabPanelFile <- function (title, filename, value = title, icon = NULL, lang = NULL) {
+	env                     <- widget(title, lang)
+	args                    <- list(title=title, value=value, icon=icon)
+	env[['data']]           <- filename
+	env[['ui']]$text        <- list(func='tabPanel', args)
+	return(env)
+}
+
+tabPanelData <- function(title='Data', filename, value = title, icon = NULL) {
+	tabPanelFile (title, filename, value, icon)
+}
+
+tabPanelHelp <- function(title='Help', filename, value = title, icon = NULL) {
+	tabPanelFile (title, filename, value, icon)
+}

@@ -1,0 +1,16 @@
+Package: mmstat
+Type: Package
+Title: Support for the development of interactive Shiny apps
+Version: 1.0
+Date: 2017-01-19
+Authors@R: person("Sigbert", "Klinke", email = "sigbert@hu-berlin.de", role = c("aut", "cre"))
+Maintainer: Sigbert Klinke <sigbert@hu-berlin.de>
+Description: More about what it does (maybe more than one line)
+Depends:
+    R (>= 3.2.5),
+License: GPL-2
+Imports:
+    utils,
+    shiny (>= 0.13.2)
+LazyData: true
+RoxygenNote: 6.0.1
