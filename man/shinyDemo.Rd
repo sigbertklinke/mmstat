@@ -14,6 +14,9 @@ Runs a shiny app similar to \code{demo}.
 }
 \examples{
 \dontrun{
+  # to view all possible apps
+  shinyDemo()
+  # to run one app 
   shinyDemo('mmstatContinuousDistribution')
 }
 }

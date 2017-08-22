@@ -12,25 +12,25 @@ wTable <- widgetSelect(list(inputId='table',
 													  label='Table view',
 														choices=enumChoices(
 															        c('Absolute frequencies',
-																	    'Relative frequencies',
-																			'Rowwise frequencies',
-																			'Columnwise frequencies',
-																			'Expected frequencies',
-																			'Residuals',
-																			'Studentized residuals',
-														       		'Squared residuals'))
-                                  ),
+																	      'Relative frequencies',
+																			  'Rowwise frequencies',
+																			  'Columnwise frequencies',
+																			  'Expected frequencies',
+																			  'Residuals',
+																			  'Studentized residuals',
+														       		  'Squared residuals'))
+                                       ),
 											        lang=wLang)
 wCoeff <- widgetSelect(list(inputId='coeff',
 														label='Coefficients',
 														choices=enumChoices(
 															        c('Chi square',
-																			'Contingency',
-																			'Corrected contingency',
-																			'Cramers V/Phi',
-																			'Goodman & Kruskals Lambda',
-																			'Goodman & Kruskals Tau',
-																			'Uncertainty')), 
+																			  'Contingency',
+																			  'Corrected contingency',
+																			  'Cramers V/Phi',
+																			  'Goodman & Kruskals Lambda',
+																			  'Goodman & Kruskals Tau',
+																			  'Uncertainty')), 
 														size=3,
 														selectize = FALSE,
 														multiple  = TRUE),
@@ -77,122 +77,6 @@ htmlTable <- function(tab, fmt, left=NULL, top=NULL, right=NULL, bottom=NULL, ro
   if (!is.null(rowlab)) html <- paste0(html, sprintf('<tr><td colspan="%i" align="left">%s</td></tr>', ncol, rowlab))
   html <- paste0(html, '</table>')
   return(html)
-}
-
-makeTable <- function(row, col, rowlab="y", collab="x",	coeff=0, view=1, fonsize=1) {
-	if (anyUndefined(row, col, view, fonsize)) return(NULL)
-	tab    <- table(row, col) 
-	top    <- levels(col)
-	left   <- levels(row)
-	bottom <- right <- NULL
-  if (!(view%in%1:7)) view <- 1 
-	if (view==1) {
-		fmt    <- "%i"
-		right  <- rowSums(tab)
-		bottom <- colSums(tab)
-	}
-	if (view==2) {
-		 tab <- prop.table(tab); 
-		 fmt <- "%.3f"
-		 right  <- rowSums(tab)
-		 bottom <- colSums(tab)
-	}
-	if (view==3) {
-		bottom <- colSums(prop.table(tab))
-		tab <- prop.table(tab, 1); 
-		fmt <- "%.3f"
-		right  <- rowSums(tab)
-		
-	}
-	if (view==4) {
-		right <- rowSums(prop.table(tab))
-		tab <- prop.table(tab, 2); 
-		fmt <- "%.3f"
-		bottom <- colSums(tab)	#env                     <- widget(title, lang)
-
-	}
-	if (view==5) {
-		csum <- colSums(tab) 
-	  rsum <- rowSums(tab) 
-		tab  <- outer(rsum, csum)/sum(tab)
-		fmt  <- "%.1f"
-		right  <- rowSums(tab)
-		bottom <- colSums(tab)
-	}
-	if (view==6) {
-		csum <- colSums(tab) 
-		rsum <- rowSums(tab) 
-		expe <- outer(rsum, csum)/sum(tab)
-		tab  <- (tab-expe)/sqrt(expe) 
-		fmt  <- "%.2f"
-	}
-	if (view==7) {
-		csum <- colSums(tab) 
-		rsum <- rowSums(tab) 
-		expe <- outer(rsum, csum)/sum(tab)
-		tab  <- scale((tab-expe)^2/expe) 
-		fmt  <- "%.2f"
-	}
-	if (view==8) {
-		csum <- colSums(tab) 
-		rsum <- rowSums(tab) 
-		expe <- outer(rsum, csum)/sum(tab)
-		tab  <- (tab-expe)^2/expe 
-		fmt  <- "%.2f"
-	}
-	
-	tf   <- (1:7 %in% coeff)
-	ctab <- ''
-	if (any(tf)) {
-		basetab <- table(row, col)
-		crmin   <- min(ncol(basetab), nrow(basetab))
-		astat   <- assocstats(basetab)
-		cval    <- numeric(0)
-		cname   <- character(0)
-
-		if (tf[1]) {
-			cval  <- c(cval, astat$chisq_tests[2,1])	
-			cname <- c(cname, "Chi square")
-		}
-		if (tf[2]) {
-			cval  <- c(cval, astat$contingency)	
-			cname <- c(cname, "Contingency")
-		}
-		if (tf[3]) {
-			cval  <- c(cval, astat$contingency*sqrt(crmin/(crmin-1)))	
-			cname <- c(cname, "Corrected contingency")
-		}
-		if (tf[4]) {
-			cval  <- c(cval, astat$cramer)	
-			cname <- c(cname, "Cramers V/Phi")
-		}
-		if (tf[5]) {
-			cval  <- c(cval, val$lambda.cr)	
-			cname <- c(cname, sprintf("Goodman & Kruskal's lambda (%s dependend)", collab))
-			cval  <- c(cval, val$lambda.rc)	
-			cname <- c(cname, sprintf("Goodman & Kruskal's lambda (%s dependend)", rowlab))
-			cval  <- c(cval, val$lambda.symmetric)	
-			cname <- c(cname, "Goodman & Kruskal's lambda (symmetric)")
-		}
-		if (tf[6]) {
-			cval  <- c(cval, GoodmanKruskalTau(basetab))	
-			cname <- c(cname, sprintf("Goodman & Kruskal's tau (%s dependend)", collab))
-			cval  <- c(cval, GoodmanKruskalTau(basetab, dir='c'))	
-			cname <- c(cname, sprintf("Goodman & Kruskal's tau (%s dependend)", rowlab))
-		}
-		if (tf[7]) {
-			val   <- nom.uncertainty(basetab)
-			cval  <- c(cval, val$uc.cr)	
-			cname <- c(cname, sprintf("Uncertainty (%s dependend)", collab))
-			cval  <- c(cval, val$uc.rc)	
-			cname <- c(cname, sprintf("Uncertainty  (%s dependend)", rowlab))
-			cval  <- c(cval, val$uc.symmetric)	
-			cname <- c(cname, "Uncertainty (symmetric)")
-		}
-		ctab <- htmlTable(as.table(as.matrix(cval, ncol=1)), fmt="%.3f", left=cname, top="Value")
-	}
-	paste0(htmlTable(tab, fmt, right=right, bottom=bottom, top=top, left=left, collab=collab, rowlab=rowlab),
-				 ctab)
 }
 
 ui <- dashboardPage(
@@ -270,8 +154,20 @@ server <- function(input, output, session) {
 									table2html(ct$stdres, digits=3),
 									table2html(ct$residuals^2, digits=3, colsum="Column sums", rowsums="Row sums")
 					 )
-		ctab <- switch(as.numeric(coeff$))
-	  HTML(cth)
+#		c('Chi square',
+#			'Contingency',
+#			'Corrected contingency',
+#			'Cramers V/Phi',
+#			'Goodman & Kruskals Lambda',
+#			'Goodman & Kruskals Tau',
+#			'Uncertainty')), 
+		ctab <- poText(association(ct, chisq=(1 %in% coeff$coeff), C=(2 %in% coeff$coeff),
+									  			     CC=(3 %in% coeff$coeff), V=(4 %in% coeff$coeff),
+    								   				 lambda=(5 %in% coeff$coeff), gkt=(6 %in% coeff$coeff),
+		    							  			 theil=(7 %in% coeff$coeff)),
+									 wLang)
+		if (!is.null(ctab)) cth<-paste0(cth, table2html(ctab, digits=3)) 
+		HTML(cth)
 	})
 }
 

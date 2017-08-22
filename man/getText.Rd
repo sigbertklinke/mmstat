@@ -2,14 +2,14 @@
 % Please edit documentation in R/widgetLanguage.R
 \name{getText}
 \alias{getText}
-\title{Text translation}
+\title{Text translation: getText}
 \usage{
 getText(msg, env = NULL)
 }
 \arguments{
-\item{msg}{text vector to translate}
+\item{msg}{character: text vector to translate}
 
-\item{env}{language widget}
+\item{env}{widget: language widget}
 }
 \value{
 For all elements of the text vector a translation will be delivered.

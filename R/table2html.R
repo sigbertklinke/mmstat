@@ -39,10 +39,11 @@ tag <- function (name, ..., empty=FALSE) {
 #' sink()
 table2html <- function(tab, colsums=NULL, rowsums=NULL, bg=c("white", "lightGray"), border="grey", style="width:95%;margin:10px;", ...) {
 	if (!("table" %in% class(tab))) stop('table required')
-	labs <- names(dimnames(tab))
-	if (length(labs)!=2) stop('two dimensional table required')
-	collab <- if(labs[2]=='') NULL else labs[2]
-	rowlab <- if(labs[1]=='') NULL else labs[1]
+	dimtab <- length(dimnames(tab))
+	if (dimtab!=2) stop('two dimensional table required, maybe use "table2d" for conversion')
+	labs   <- names(dimnames(tab))
+	collab <- if(is.null(labs[2]) || (labs[2]=='')) NULL else labs[2]
+	rowlab <- if(is.null(labs[1]) || (labs[1]=='')) NULL else labs[1]
 	lcols  <- sum(!is.null(rownames(tab)), !is.null(rowlab))
 	rcols  <- as.integer(!is.null(rowsums))
 	rname  <- rownames(tab)
@@ -79,13 +80,15 @@ table2html <- function(tab, colsums=NULL, rowsums=NULL, bg=c("white", "lightGray
 										 sapply(tab[1,], function(elem) { tag('td', align=align, elem) }),
 										 tag('th', empty=!rcols, colspan=rcols, style=sprintf("text-align:right;background-color:%s", border),  col[1])
 	)
-	furtherrows <- sapply(2:nrow(tab), function(i) {
-		tag('tr', style=sprintf("background-color:%s", bg[1+((i-1)%%length(bg))]),
-				tag('th', empty=is.null(rownames(tab)),  style=sprintf("text-align:center;background-color:%s", border), rownames(tab)[i]),
-				sapply(tab[i,], function(elem) { tag('td', align=align, elem) }),
-				tag('th', empty=!rcols, colspan=rcols, align=align, style=sprintf("text-align:right;background-color:%s", border), col[i])
-		)
-	})
+	if (nrow(tab)>1) { 
+  	furtherrows <- sapply(2:nrow(tab), function(i) {
+	  	tag('tr', style=sprintf("background-color:%s", bg[1+((i-1)%%length(bg))]),
+		  		tag('th', empty=is.null(rownames(tab)),  style=sprintf("text-align:center;background-color:%s", border), rownames(tab)[i]),
+			  	sapply(tab[i,], function(elem) { tag('td', align=align, elem) }),
+				  tag('th', empty=!rcols, colspan=rcols, align=align, style=sprintf("text-align:right;background-color:%s", border), col[i])
+		  )
+	  })
+	} else furtherrows <- NULL
 	lastrow     <- tag('tr', empty=is.null(row), style=sprintf("background-color:%s", border), 
 										 tag('th', empty=!lcols,   colspan=lcols, if(is.null(colsums)) '&nbsp;' else as.character(colsums)),
 										 sapply(row, function(elem) { tag('th', style=sprintf("text-align:%s;", align), elem) }),

@@ -9,11 +9,14 @@
 #'
 #' @examples
 #' \dontrun{
+#'   # to view all possible apps
+#'   shinyDemo()
+#'   # to run one app 
 #'   shinyDemo('mmstatContinuousDistribution')
 #' }
 shinyDemo <- function(example) {
 	# locate all the shiny app examples that exist
-	validExamples <- list.files(system.file("shiny-demo", package = "mmstat"))
+	validExamples <- list.files(system.file("shiny-demo", package = "mmstat"), pattern="*.R")
 	
 	validExamplesMsg <-
 		paste0(

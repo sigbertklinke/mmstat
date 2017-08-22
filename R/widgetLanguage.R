@@ -1,10 +1,10 @@
-#' Text translation
+#' Text translation: getText
 #'
 #' Each element of the text vector \code{msg} is translated in the current target language. 
 #' If the translation of a text element is not possible then the original text is delivered.
 #'  
-#' @param msg text vector to translate
-#' @param env language widget
+#' @param msg character: text vector to translate
+#' @param env widget: language widget
 #'
 #' @details For the translations must be PO files provided. If a Shiny app 
 #' is run locally (not under a server) \code{getText} writes in the current directory a file
@@ -33,6 +33,49 @@ getText <- function(msg, env=NULL) {
 	ind <- (1:length(pos))[!is.na(pos)]
 	ret[ind] <- env[['data']][[sel]]$str[pos[ind]]
 	return(ret)
+}
+
+#' Text translation: getText
+#'
+#' Each text element of the R object \code{obj} is translated in the current target language. 
+#' If the translation of a text element is not possible then the original text is delivered. 
+#'
+#' @param obj R object: 
+#' @param env widget: language widget
+#' 
+#' @details For the translations must be PO files provided. Since \code{\link{getText}} is used 
+#' internally the same holds as in \code{\link{getText}} given. Currently are only tables as 
+#' objects supported, all other objects will deliver a warning.
+#' 
+#' @return a R object witj translated texts
+#' @export
+#'
+#' @examples 
+#' lang <- widgetLanguage ('lang')
+#' tab  <- table(round(rnorm(100)), round(rnorm(100)))
+#' dimnames(tab) <- c("GERMAN", "ENGLISH")
+#' poText(tab, lang)
+poText <- function(obj, env=NULL) {
+	if (is.null(env) || is.null(obj)) return(obj)
+	ret               <- obj
+	translated        <- rep(FALSE, length(class(ret)))
+	names(translated) <- class(ret)
+	if ('table' %in% class(ret)) {
+		attr <- attributes(ret)
+		names(attr$dimnames) <- getText(names(attr$dimnames), env)
+		if (length(attr$dimnames)) {
+			for (i in 1:length(attr$dimnames)) {
+				attr$dimnames[[i]] <- getText(attr$dimnames[[i]], env)
+			}
+		}
+		if ('character' %in% class(obj[1])) {
+			ret <- getText(ret, env)
+		}
+		attributes(ret) <- attr
+		translated['table'] <- TRUE
+	}
+	if (any(!translated)) warning(sprintf('not translated: %s', paste0(names(translated[!translated]), collapse = ",")))
+	ret
 }
 
 #' Widget for language choice
