@@ -1,11 +1,13 @@
 # mmstat
 
-___mmstat__ is a R library for supporting our apps in teaching basic statistics. 
+__mmstat__ is a R library for supporting our apps in teaching basic statistics. 
 
 To run the test apps in RStudio:
 
+```R
   library("mmstat")
   shinyDemo("testBinomial.R")
+```
   
 Please note that we have to types of apps:
 
