@@ -14,9 +14,8 @@
 #'
 #' @examples
 #' \dontrun{
-#'   # Press ESC after finishing the demo
-#'   demo(testSignificanceLevel)
-#'   demo(testSignificanceLevelLang)
+#'   shinyDemo('testSignificanceLevel')
+#'   shinyDemo('testSignificanceLevelLang')
 #' }
 widgetSignificanceLevel <- function(inputId,
 													         level=list(),

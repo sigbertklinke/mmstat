@@ -15,9 +15,8 @@
 #'
 #' @examples
 #' \dontrun{
-#'   # Press ESC after finishing the app
-#'   demo(testTest)
-#'   demo(testTestLang)
+#'   shinyDemo('testTest')
+#'   shinyDemo('testTestLang')
 #' }
 widgetTest <- function(inputId,
 											 alternative  = list(),

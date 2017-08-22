@@ -208,7 +208,7 @@ print.distrFunc  <- function(x, ...) {
 #' are used. Since internally \code{points} and \code{lines} is used, the further drawing parameters
 #' relate to that. 
 #' 
-#' @param type distribution function object
+#' @param x distribution function object
 #' @param add logical: add to current plot (default: add=F)
 #' @param xlim range: plotting area (default: NULL)
 #' @param ylim range: plotting area (default: NULL)
@@ -229,7 +229,7 @@ print.distrFunc  <- function(x, ...) {
 #' # quantile
 #' d <- distrFunc("norm", func="q")
 #' plot(d)
-#' ## Geoimetric distribution (continuous)
+#' ## Geometric distribution (continuous)
 #' # density
 #' d <- distrFunc("geom", prob=0.5)
 #' plot(d)
@@ -239,9 +239,9 @@ print.distrFunc  <- function(x, ...) {
 #' # quantile
 #' d <- distrFunc("geom", prob=0.5, func="q")
 #' plot(d)
-plot.distrFunc <- function(type, add=F, xlim=NULL, ylim=NULL, cex.lettering=1, n=501, ...) {
-	if (is.null(xlim)) xlim <- type$xlim
-	if (is.null(ylim)) ylim <- type$ylim
+plot.distrFunc <- function(x, add=F, xlim=NULL, ylim=NULL, cex.lettering=1, n=501, ...) {
+	if (is.null(xlim)) xlim <- x$xlim
+	if (is.null(ylim)) ylim <- x$ylim
 	#
 	if (!add) {
 		pargs <- list(...)
@@ -264,68 +264,69 @@ plot.distrFunc <- function(type, add=F, xlim=NULL, ylim=NULL, cex.lettering=1, n
 	}
 	pargs <- list(...)
 	usr   <- graphics::par("usr")
-	if (type$discrete) {
+	if (x$discrete) {
 		if (is.null(pargs$pch)) pargs$pch <- 19
-		cargs <- type$arg
-	  if (type$func=='d') {
+		cargs <- x$arg
+	  if (x$func=='d') {
 	  	pargs$x <- cargs$x <- seq(xlim[1], xlim[2], by=1)
-	  	call    <- match.fun(paste0(type$func, type$type))
+	  	call    <- match.fun(paste0(x$func, x$type))
 	  	pargs$y <- do.call(call, cargs)
 	  	#
 	  	do.call("points", pargs)
 	  	pargs$type <- 'h'
 	  	do.call("lines", pargs) 
 	  }
-		if (type$func=='p') {
-			x <- pargs$x <- cargs$q <- seq(xlim[1], xlim[2], by=1)
-			call         <- match.fun(paste0(type$func, type$type))
-			y <- pargs$y <- do.call(call, cargs)
+		if (x$func=='p') {
+			xo <- pargs$x <- cargs$q <- seq(xlim[1], xlim[2], by=1)
+			call         <- match.fun(paste0(x$func, x$type))
+			yo <- pargs$y <- do.call(call, cargs)
 			do.call("points", pargs)
 			#
       pargs$x <- c(usr[1], xlim[1])
 			pargs$y <- c(0,0)
 			do.call("lines", pargs)
-		  for (i in (1:(length(x)))) { 
-			  pargs$x <- c(x[i], x[i]+1)
-			  pargs$y <- c(y[i], y[i])
+		  for (i in (1:(length(xo)))) { 
+			  pargs$x <- c(xo[i], xo[i]+1)
+			  pargs$y <- c(yo[i], yo[i])
 			  do.call("lines", pargs)
 		  }
-			pargs$x <- c(max(x)+1, usr[2])
-			pargs$y <- c(y[length(x)], y[length(x)])
+			pargs$x <- c(max(xo)+1, usr[2])
+			pargs$y <- c(yo[length(xo)], yo[length(xo)])
 			do.call("lines", pargs)
 		}
-		if (type$func=='q') {
-			y <- pargs$y <- cargs$q <- seq(ylim[1], ylim[2], by=1)
-			f <- match.fun(paste0('p', type$type))
-			x <- pargs$x <- do.call(f, cargs)
+		if (x$func=='q') {
+			browser()
+			yo <- pargs$y <- cargs$q <- seq(ylim[1], ylim[2], by=1)
+			f <- match.fun(paste0('p', x$type))
+			xo <- pargs$x <- do.call(f, cargs)
 			do.call("points", pargs)
 			#
-			print(cbind(x,y))
+			print(cbind(xo,yo))
 			xs <- 0
-			for (i in (1:length(x))) { 
-				pargs$x <- c(xs, x[i])
-				pargs$y <- c(y[i], y[i])
+			for (i in (1:length(xo))) { 
+				pargs$x <- c(xs, xo[i])
+				pargs$y <- c(yo[i], yo[i])
 				do.call("lines", pargs)
-				xs <- x[i]
+				xs <- xo[i]
 			}
 		}
 	} else {
-		cargs <- type$arg
-		if (type$func=='d') {
+		cargs <- x$arg
+		if (x$func=='d') {
 			cargs$x <- pargs$x <- seq(xlim[1], xlim[2], length.out=n)
-			call    <- match.fun(paste0(type$func, type$type))
+			call    <- match.fun(paste0(x$func, x$type))
 			pargs$y <- do.call(call, cargs)
 			do.call("lines", pargs)
 		}			
-		if (type$func=='p') {
+		if (x$func=='p') {
 			cargs$q <- pargs$x <- seq(xlim[1], xlim[2], length.out=n)
-			call    <- match.fun(paste0(type$func, type$type))
+			call    <- match.fun(paste0(x$func, x$type))
 			pargs$y <- do.call(call, cargs)
 			do.call("lines", pargs)
 		}		
-		if (type$func=='q') {
+		if (x$func=='q') {
 			cargs$p <- pargs$x <- seq(xlim[1], xlim[2], length.out=n)
-			call    <- match.fun(paste0(type$func, type$type))
+			call    <- match.fun(paste0(x$func, x$type))
 			pargs$y <- do.call(call, cargs)
 			do.call("lines", pargs)
 		}		

@@ -4,16 +4,18 @@
 \alias{print.widget}
 \title{print}
 \usage{
-\method{print}{widget}(w)
+\method{print}{widget}(x, ...)
 }
 \arguments{
-\item{w}{widget}
+\item{x}{widget}
+
+\item{...}{further parameters (currently ignored)}
 }
 \value{
 the widget
 }
 \description{
-Prints the used Shiny UI elements and its parameter. Returns it invisibly (via \code{\link{invisible}(w)}).
+Prints the used Shiny UI elements and its parameter. Returns it invisibly (via \code{\link{invisible}(x)}).
 }
 \examples{
 w <- widgetHypergeometric('test')

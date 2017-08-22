@@ -2,7 +2,6 @@
 #'
 #' @param inputId input element for the condition
 #' @param ... parameter sets for the widget to render
-#' @param lang language widget (or NULL)
 #' @param session session parameter of the server function
 #'
 #' @seealso \code{\link{conditionalPanel}}
@@ -12,7 +11,7 @@
 #'
 #' @examples
 #' \dontrun{
-#'   demo(mmstatDiscreteDistributions)
+#'   shinyDemo('mmstatDiscreteDistributions')
 #' }
 renderPanel <- function(inputId, ..., session=NULL) {
   widgets <- list(...)

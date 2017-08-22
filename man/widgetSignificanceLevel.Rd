@@ -22,9 +22,8 @@ This means for a 5\% significance level the result is 5 (and not 0.05).
 }
 \examples{
 \dontrun{
-  # Press ESC after finishing the demo
-  demo(testSignificanceLevel)
-  demo(testSignificanceLevelLang)
+  shinyDemo('testSignificanceLevel')
+  shinyDemo('testSignificanceLevelLang')
 }
 }
 \seealso{

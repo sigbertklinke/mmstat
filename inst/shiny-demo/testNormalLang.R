@@ -21,9 +21,12 @@ w <- widgetNormal('widget', lang=l)
  
 server <- function(input, output, session) {
 
-	output$widgetUI <- renderUI({ renderWidget(w, lang=input[[getInputs(l)]]) })
-	output$langUI   <- renderUI({ renderWidget(l, lang=input[[getInputs(l)]]) })
-	
+  widgetObserve(l, input, session)
+  widgetObserve(w, input, session)
+  output$widgetUI <- renderUI({ renderWidget(w) })
+  output$langUI   <- renderUI({ renderWidget(l) })
+  
+  
   output$out <- renderPrint({
   	inp <- getValues(w, input)
   	printVar(inp)

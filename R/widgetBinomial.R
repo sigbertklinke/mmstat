@@ -6,7 +6,6 @@
 #' @param lang widget: language widget
 #'
 #' @templateVar vars \code{size} and \code{prob}
-#' @template detailvars
 #'
 #' @seealso \code{\link{sliderInput}}, \code{\link{dbinom}}
 #'
@@ -15,10 +14,9 @@
 #'
 #' @examples
 #' \dontrun{
-#'   # Press ESC after finishing the demo
-#'   demo(testBinomial)
-#'   demo(testBinomialLang)
-#'   demo(mmstatDiscreteDistribution)
+#'   shinyDemo('testBinomial')
+#'   shinyDemo('testBinomialLang')
+#'   shinyDemo('mmstatDiscreteDistribution')
 #' }
 widgetBinomial <- function(inputId,
 											 		 size=list(), 

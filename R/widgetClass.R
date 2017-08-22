@@ -51,24 +51,26 @@ is.widget <- function(x) { inherits(x, "widget") }
 #'
 #' Compactly display the internal structure of a widget
 #'
-#' @param w widget
-#'
+#' @param object widget
+#' @param ... further parameters (currently ignored)
+#' 
 #' @export
 #'
 #' @examples
 #' w <- widgetHypergeometric('test')
 #' str(w)
-str.widget <- function(w) {
+str.widget <- function(object, ...) {
 	l   <- list()
-	for (obj in ls(w)) l[[obj]] <- w[[obj]]
+	for (obj in ls(object)) l[[obj]] <- object[[obj]]
 	str(l)
 }
 
 #' print
 #'
-#' Prints the used Shiny UI elements and its parameter. Returns it invisibly (via \code{\link{invisible}(w)}).
+#' Prints the used Shiny UI elements and its parameter. Returns it invisibly (via \code{\link{invisible}(x)}).
 #'
-#' @param w widget
+#' @param x widget
+#' @param ... further parameters (currently ignored)
 #'
 #' @return the widget
 #' @export
@@ -76,12 +78,12 @@ str.widget <- function(w) {
 #' @examples
 #' w <- widgetHypergeometric('test')
 #' print(w)
-print.widget <- function(w) {
-	ui <- w$ui
+print.widget <- function(x, ...) {
+	ui <- x$ui
 	if (length(ui)) {
   	for (elem in ui) {
 	  	arglist <- elem$args
-		  arglist$inputId <- paste(w$widgetId, arglist$inputId, sep=".")
+		  arglist$inputId <- paste(x$widgetId, arglist$inputId, sep=".")
 		  delim   <- ifelse(sapply(arglist, is.character), '"', "")
  		  arglist <- paste0(names(arglist),"=", delim, as.character(arglist), delim, collapse=", ")
 		  cat(sprintf("%s(%s)\n", elem$func, arglist))
@@ -89,15 +91,16 @@ print.widget <- function(w) {
   } else {
   	cat("Empty widget\n")
 	}
-	invisible(w)
+	invisible(x)
 }
 
 #' summary
 #'
 #' Summarizes the widget contents
 #'
-#' @param w widget
-#'
+#' @param object widget
+#' @param ... further parameters (currently ignored)
+#' 
 #' @return Informations about the widget
 #' Widget name    : widget name
 #' UI element(s)  : list of Shiny UI elements
@@ -111,14 +114,14 @@ print.widget <- function(w) {
 #' @examples
 #' w <- widgetHypergeometric('test')
 #' summary(w)
-summary.widget <- function(w) {
-	cat("Widget name    :", w$widgetId, "\n")
-	cat("UI element(s)  :", paste0(lapply(w$ui, function(e) { as.character(e$func) }), collapse=", "), "\n")  
-	cat("Observe values :", length(w$value), "\n")
-	cat("Observe changes:", length(w$change), "\n")
-	cat("Observer       :", !is.null(w[['observe']]), "\n")
-	cat("Language       :", !is.null(w[['lang']]), "\n")
-	cat("Internal data  :", !is.null(w[['data']]), "\n")
+summary.widget <- function(object, ...) {
+	cat("Widget name    :", object$widgetId, "\n")
+	cat("UI element(s)  :", paste0(lapply(object$ui, function(e) { as.character(e$func) }), collapse=", "), "\n")  
+	cat("Observe values :", length(object$value), "\n")
+	cat("Observe changes:", length(object$change), "\n")
+	cat("Observer       :", !is.null(object[['observe']]), "\n")
+	cat("Language       :", !is.null(object[['lang']]), "\n")
+	cat("Internal data  :", !is.null(object[['data']]), "\n")
 }
 
 # mergable environment objects

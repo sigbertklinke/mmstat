@@ -18,9 +18,8 @@
 #'
 #' @examples
 #' \dontrun{
-#'   # Press ESC after finishing the app
-#'   demo(testConfidenceLevel)
-#'   demo(testConfidenceLevelLang)
+#'   shinyDemo('testConfidenceLevel')
+#'   shinyDemo('testConfidenceLevelLang')
 #' }
 widgetConfidenceLevel <- function(inputId,
 													        level=list(),

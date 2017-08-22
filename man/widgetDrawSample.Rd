@@ -29,9 +29,8 @@ they will not display or used.
 }
 \examples{
 \dontrun{
-  # Press ESC after finishing the app
-  demo(testDrawSample)
-  demo(testDrawSampleLang)
+  shinyDemo('testDrawSample')
+  shinyDemo('testDrawSampleLang')
 }
 }
 \seealso{

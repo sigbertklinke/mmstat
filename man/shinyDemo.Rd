@@ -13,7 +13,9 @@ shinyDemo(example)
 Runs a shiny app similar to \code{demo}.
 }
 \examples{
-shinyDemo('mmstatContinuousDistribution')
+\dontrun{
+  shinyDemo('mmstatContinuousDistribution')
+}
 }
 \references{
 Based on \href{http://deanattali.com/2015/04/21/r-package-shiny-app/}{Supplementing your R package with a Shiny app} by Dean Attali.

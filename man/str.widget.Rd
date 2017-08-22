@@ -4,10 +4,12 @@
 \alias{str.widget}
 \title{str}
 \usage{
-\method{str}{widget}(w)
+\method{str}{widget}(object, ...)
 }
 \arguments{
-\item{w}{widget}
+\item{object}{widget}
+
+\item{...}{further parameters (currently ignored)}
 }
 \description{
 Compactly display the internal structure of a widget

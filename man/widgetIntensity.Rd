@@ -22,10 +22,10 @@ Widget for a Poisson or exponential distribution
 \examples{
 \dontrun{
   # Press ESC after finishing the demo
-  demo(testIntensity)
-  demo(testIntensityLang)
-  demo(mmstatDiscreteDistribution)    # see Poisson distribution
-  demo(mmstatContinuousDistribution)  # see Exponential distribution
+  shinyDemo('testIntensity')
+  shinyDemo('testIntensityLang')
+  shinyDemo('mmstatDiscreteDistribution')    # see Poisson distribution
+  shinyDemo('mmstatContinuousDistribution')  # see Exponential distribution
 }
 }
 \seealso{

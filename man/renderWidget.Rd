@@ -12,8 +12,6 @@ renderWidget(env, session = NULL, elem = NULL)
 \item{session}{session parameter of the server function}
 
 \item{elem}{element of widget to render, if NULL the whole widget will be rendered}
-
-\item{lang}{selected language}
 }
 \value{
 HTML code which can be used instead of \code{renderUI}
@@ -42,6 +40,6 @@ renderWidget(w)
 \dontrun{
   # Open in browser and add "?widget.size=11" to the URL to set the starting
   # value to 11
-  demo(testBinomialSession)
+  shinyDemo('testBinomialSession')
 }
 }

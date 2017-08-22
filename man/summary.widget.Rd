@@ -4,10 +4,12 @@
 \alias{summary.widget}
 \title{summary}
 \usage{
-\method{summary}{widget}(w)
+\method{summary}{widget}(object, ...)
 }
 \arguments{
-\item{w}{widget}
+\item{object}{widget}
+
+\item{...}{further parameters (currently ignored)}
 }
 \value{
 Informations about the widget

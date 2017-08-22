@@ -12,8 +12,6 @@ renderPanel(inputId, ..., session = NULL)
 \item{...}{parameter sets for the widget to render}
 
 \item{session}{session parameter of the server function}
-
-\item{lang}{language widget (or NULL)}
 }
 \value{
 HTML code which can be used instead of \code{renderUI}
@@ -23,7 +21,7 @@ Render a conditional panel
 }
 \examples{
 \dontrun{
-  demo(mmstatDiscreteDistributions)
+  shinyDemo('mmstatDiscreteDistributions')
 }
 }
 \seealso{

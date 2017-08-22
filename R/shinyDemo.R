@@ -8,7 +8,9 @@
 #' @export
 #'
 #' @examples
-#' shinyDemo('mmstatContinuousDistribution')
+#' \dontrun{
+#'   shinyDemo('mmstatContinuousDistribution')
+#' }
 shinyDemo <- function(example) {
 	# locate all the shiny app examples that exist
 	validExamples <- list.files(system.file("shiny-demo", package = "mmstat"))

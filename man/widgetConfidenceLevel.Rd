@@ -27,9 +27,8 @@ UI element is not drawn, but this value delivered back by \code{getValues}.
 }
 \examples{
 \dontrun{
-  # Press ESC after finishing the app
-  demo(testConfidenceLevel)
-  demo(testConfidenceLevelLang)
+  shinyDemo('testConfidenceLevel')
+  shinyDemo('testConfidenceLevelLang')
 }
 }
 \seealso{

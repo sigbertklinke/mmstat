@@ -18,7 +18,9 @@ w <- widgetLanguage('widget')
 
 server <- function(input, output, session) {
   
-  output$widgetUI <- renderUI({ renderWidget(w, lang=input[[getInputs(w)]]) })
+  widgetObserve(w, input, session)
+  output$widgetUI <- renderUI({ renderWidget(w) })
+ 
   
   output$out <- renderPrint({
   	inp <- getValues(w, input)

@@ -23,8 +23,8 @@ stores the new value.
 \examples{
 \dontrun{
   # Press ESC after finishing the app
-  demo(testDrawSample)
-  demo(testDrawSampleLang)
+  shinyDemo('testDrawSample')
+  shinyDemo('testDrawSampleLang')
 }
 }
 \seealso{

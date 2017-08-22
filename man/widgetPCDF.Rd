@@ -25,8 +25,8 @@ A button allows to refit the axes to current display function.
 \examples{
 \dontrun{
   # Press ESC after finishing the app
-  demo(testPCDF)
-  demo(testPCDFLang)
+  shinyDemo('testPCDF')
+  shinyDemo('testPCDFLang')
 }
 }
 \seealso{

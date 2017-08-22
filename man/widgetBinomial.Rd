@@ -21,20 +21,11 @@ a widget object (environment)
 \description{
 Widget for a binomial distribution
 }
-\details{
-Possible values for  \code{size} and \code{prob} are
-\describe{
-  \item{\strong{a named list}}{for the parameters for the according Shiny UI element, e.g. \code{\link{sliderInput}}}
-  \item{\strong{\code{NULL}}}{the Shiny UI element is not drawn and does \emph{not} return any value in \code{getValues}}
-  \item{\strong{any other value}}{the Shiny UI element is not drawn and does return the given value in \code{getValues}}
-}
-}
 \examples{
 \dontrun{
-  # Press ESC after finishing the demo
-  demo(testBinomial)
-  demo(testBinomialLang)
-  demo(mmstatDiscreteDistribution)
+  shinyDemo('testBinomial')
+  shinyDemo('testBinomialLang')
+  shinyDemo('mmstatDiscreteDistribution')
 }
 }
 \seealso{

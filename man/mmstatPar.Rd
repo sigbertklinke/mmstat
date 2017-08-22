@@ -21,9 +21,7 @@ The following parameters are available for setting and getting
 \itemize{
 \item{\code{col}}{ a vector of eight light and dark colors which are generated with the R Color brewer}
 \item{\code{col.sample}}{ color used in mmstat to draw sample data/parameters}
-\item{\code{col.sample.robust}}{ color used in mmstat to draw robust sample parameters}
 \item{\code{col.population}}{ color used in mmstat to draw population data/parameters}
-\item{\code{col.population.robust}}{ color used in mmstat to draw robust population parameters}
 \item{\code{alpha}}{ the default set for possible significance levels}
 }
 }

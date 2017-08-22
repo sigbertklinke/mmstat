@@ -21,9 +21,8 @@ Widget for font size choice
 }
 \examples{
 \dontrun{
-  # Press ESC after finishing the demo
-  demo(testFontSize)
-  demo(testFontSizeLang)
+  shinyDemo('testFontSize')
+  shinyDemo('testFontSizeLang')
 }
 }
 \seealso{

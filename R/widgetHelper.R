@@ -21,18 +21,29 @@ mmstat.env$pp <- list(actionButton       = list(update="updateActionButton", lan
 					            textInput          = list(session = "value", update="updateTextInput",
 					            													lang =  c("label", "value", "placeholder"))
                      )
-mmstat.env$col   <- list(daquamarine="#1B9E77",  dorange="#D95F02",   dblue="#7570B3",   dpink="#E7298A", 	
-											   dgreen="#66A61E",     	dyellow="#E6AB02", 	dgold="#A6761D", 	dgray="#666666",
-											   laquamarine="#66C2A5",  lorange="#FC8D62",  lblue="#8DA0CB",  lpink="#E78AC3", 	
-											   lgreen="#A6D854",     	lyellow="#FFD92F", 	lgold="#E5C494", 	lgray="#B3B3B3")
+mmstat.env$col   <- c(daquamarine="#1B9E77",  dorange="#D95F02",   dblue="#7570B3",   dpink="#E7298A", 	
+											dgreen="#66A61E",     	dyellow="#E6AB02", 	dgold="#A6761D", 	dgray="#666666",
+											laquamarine="#66C2A5",  lorange="#FC8D62",  lblue="#8DA0CB",  lpink="#E78AC3", 	
+											lgreen="#A6D854",     	lyellow="#FFD92F", 	lgold="#E5C494", 	lgray="#B3B3B3")
 mmstat.env$alpha <- c(0.1, 0.25, 0.5, 1, 2.5, 5, 10, 20)
-mmstat.env$col.sample            <- mmstat.env$col[1]
-mmstat.env$col.sample.robust     <- mmstat.env$col[3]
-mmstat.env$col.population        <- mmstat.env$col[2]
-mmstat.env$col.population.robust <- mmstat.env$col[4]
+mmstat.env$col.population <- mmstat.env$col[1:8]
+mmstat.env$col.sample     <- mmstat.env$col[9:16]
 
+
+#' getShinyInfo
+#'
+#' Information for input functions in the package \code{shiny} are stored in the library \code{mmstat}.
+#' To access the information this function is used.
+#'
+#' @param funcname character: name of shiny function
+#'
+#' @return information about a specific shiny input function
+#' @export
+#'
+#' @examples
+#' getShinyInfo('sliderInput')
 getShinyInfo <- function(funcname) {
-	return(mmstat.env$pp[funcname])
+	return(mmstat.env$pp[[funcname]])
 }
 
 #' mmstatPar
@@ -46,9 +57,7 @@ getShinyInfo <- function(funcname) {
 #' \itemize{
 #' \item{\code{col}}{ a vector of eight light and dark colors which are generated with the R Color brewer}
 #' \item{\code{col.sample}}{ color used in mmstat to draw sample data/parameters}
-#' \item{\code{col.sample.robust}}{ color used in mmstat to draw robust sample parameters}
 #' \item{\code{col.population}}{ color used in mmstat to draw population data/parameters}
-#' \item{\code{col.population.robust}}{ color used in mmstat to draw robust population parameters}
 #' \item{\code{alpha}}{ the default set for possible significance levels}
 #' } 
 #'
@@ -65,7 +74,7 @@ mmstatPar <- function(...) {
 	if(!length(args)) return(as.list(mmstat.env))
 	argname <- names(args)
 	if (!length(argname)) argname <- rep('', length(args))
-	 for (i in 1:length(args)) {
+	for (i in 1:length(args)) {
 	  if (argname[i]=='') {
 	  	fail <- T 
 	  	if (is.character(args[[i]])) {
@@ -83,6 +92,7 @@ mmstatPar <- function(...) {
 	  	mmstat.env[[argname[[i]]]] <- args[[argname[[i]]]]
 	  }
 	}
+	if (length(ret)==1) ret <- ret[[1]]
 	ret
 }
 
@@ -146,8 +156,8 @@ anyUndefined <- function(...) {
 #' @examples
 #' \dontrun{
 #'   # Press ESC after finishing the app
-#'   demo(testDrawSample)
-#'   demo(testDrawSampleLang)
+#'   shinyDemo('testDrawSample')
+#'   shinyDemo('testDrawSampleLang')
 #' }
 widgetValueChanged <- function(env, input) {
 	if (is.null(env[['change']])) return(NULL)
@@ -184,11 +194,12 @@ widgetValueChanged <- function(env, input) {
 #' logic that prevents the invalidateLater from being run.
 #'
 #' @export
+#' @import shiny
 #' @examples
 #' \dontrun{
 #'   # Press ESC after finishing the app
-#'   demo(testDrawSample)
-#'   demo(testDrawSampleLang)
+#'   shinyDemo('testDrawSample')
+#'   shinyDemo('testDrawSampleLang')
 #' }
 widgetInvalidate <- function(value, millis=NULL, session=getDefaultReactiveDomain()) {
 	if (!is.null(value) && (value>0)) {

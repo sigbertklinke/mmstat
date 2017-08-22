@@ -1,31 +1,36 @@
 library("shiny")
 library("shinydashboard")
 library("mmstat")
-loadPackages("vcd", "DescTools", "lazyeval", "ryouready")
+library("vcd")
+library("DescTools")
+library("lazyeval")
+library("ryouready")
 
 wLang  <- widgetLanguage('lang')
 wFont  <- widgetFontSize('font', lang=wLang)
 wTable <- widgetSelect(list(inputId='table',
-													         label='Table view',
-														       choices=c('Absolute frequencies',
-																	        	 'Relative frequencies',
-																			       'Rowwise frequencies',
-																			       'Columnwise frequencies',
-																			       'Expected frequencies',
-																			       'Residuals',
-																			       'Studentized residuals',
-														       					 'Squared residuals')
+													  label='Table view',
+														choices=enumChoices(
+															        c('Absolute frequencies',
+																	    'Relative frequencies',
+																			'Rowwise frequencies',
+																			'Columnwise frequencies',
+																			'Expected frequencies',
+																			'Residuals',
+																			'Studentized residuals',
+														       		'Squared residuals'))
                                   ),
 											        lang=wLang)
 wCoeff <- widgetSelect(list(inputId='coeff',
 														label='Coefficients',
-														choices=c('Chi square',
+														choices=enumChoices(
+															        c('Chi square',
 																			'Contingency',
 																			'Corrected contingency',
 																			'Cramers V/Phi',
 																			'Goodman & Kruskals Lambda',
 																			'Goodman & Kruskals Tau',
-																			'Uncertainty'), 
+																			'Uncertainty')), 
 														size=3,
 														selectize = FALSE,
 														multiple  = TRUE),
@@ -37,7 +42,7 @@ mmstat <- new.env()
 
 htmlTable <- function(tab, fmt, left=NULL, top=NULL, right=NULL, bottom=NULL, rowlab=NULL, collab=NULL) {
 	ncol <- ncol(tab)+if(is.null(left)) 0 else 1+if(is.null(right)) 0 else 1
-  html <- '<table width="100%">'
+  html <- '<table width="95%" margin="8px">'
   if (!is.null(collab)) html <- paste0(html, sprintf('<tr><td colspan="%i" style="text-align:right;">%s</td></tr>', ncol, collab))
   if (!is.null(top)) {
   	row <-'' 
@@ -80,6 +85,7 @@ makeTable <- function(row, col, rowlab="y", collab="x",	coeff=0, view=1, fonsize
 	top    <- levels(col)
 	left   <- levels(row)
 	bottom <- right <- NULL
+  if (!(view%in%1:7)) view <- 1 
 	if (view==1) {
 		fmt    <- "%i"
 		right  <- rowSums(tab)
@@ -102,7 +108,7 @@ makeTable <- function(row, col, rowlab="y", collab="x",	coeff=0, view=1, fonsize
 		right <- rowSums(prop.table(tab))
 		tab <- prop.table(tab, 2); 
 		fmt <- "%.3f"
-		bottom <- colSums(tab)	env                     <- widget(title, lang)
+		bottom <- colSums(tab)	#env                     <- widget(title, lang)
 
 	}
 	if (view==5) {
@@ -134,6 +140,7 @@ makeTable <- function(row, col, rowlab="y", collab="x",	coeff=0, view=1, fonsize
 		tab  <- (tab-expe)^2/expe 
 		fmt  <- "%.2f"
 	}
+	
 	tf   <- (1:7 %in% coeff)
 	ctab <- ''
 	if (any(tf)) {
@@ -160,7 +167,6 @@ makeTable <- function(row, col, rowlab="y", collab="x",	coeff=0, view=1, fonsize
 			cname <- c(cname, "Cramers V/Phi")
 		}
 		if (tf[5]) {
-			val   <- nom.lambda(basetab)
 			cval  <- c(cval, val$lambda.cr)	
 			cname <- c(cname, sprintf("Goodman & Kruskal's lambda (%s dependend)", collab))
 			cval  <- c(cval, val$lambda.rc)	
@@ -201,14 +207,7 @@ ui <- dashboardPage(
 	),
 	dashboardBody(
 		fluidRow(
-			tabBox(
-				title = "First tabBox",
-				id = "tabset",
-				width = 12,
-				tabPanel("Main", htmlOutput("out")), 
-				tabPanel("Help", "Help"),            
-				tabPanel("Data", "Data")	
-			)
+      htmlOutput("out")
 		)
 	)
 )
@@ -224,44 +223,55 @@ server <- function(input, output, session) {
 	
 	widgetObserve(wData, input, session)
 	output$widgetTable <- renderUI({ renderWidget(wTable, 
-																								lang=input[[getInputs(wLang)]],
+#																								lang=input[[getInputs(wLang)]],
 																								session=session) })
 	output$widgetCoeff <- renderUI({ renderWidget(wCoeff, 
-																								lang=input[[getInputs(wLang)]],
+#																								lang=input[[getInputs(wLang)]],
 																								session=session) })
 	output$widgetData <- renderUI({ renderWidget(wData, 
-																								lang=input[[getInputs(wLang)]],
-																								session=session) })
-	
+#																							lang=input[[getInputs(wLang)]],
+																							session=session) })
+	#
 	output$options <- renderUI({
 		menuItem(getText('Options', wLang),
 						 renderWidget(wLang, 
-						 						 lang=input[[getInputs(wLang)]],
+#						 						 lang=input[[getInputs(wLang)]],
 						 						 session=session),
 						 renderWidget(wFont, 
-						 						 lang=input[[getInputs(wLang)]],
+#						 						 lang=input[[getInputs(wLang)]],
 						 						 session=session))
 	})
 	
 	output$out <- renderUI({
-		wtab  <- as.data.frame(HairEyeColor[,,'Male'])
-		index <- rep (1:nrow(wtab), wtab$Freq)
-		utab  <- wtab[index, ]
-		
-		data  <- getValues(wData, input)
 #		browser()
+		data  <- getValues(wData, input)
 		if (anyUndefined(data$dataset, data$var1, data$var2)) return('')
 		view  <- getValues(wTable, input)
 		coeff <- getValues(wCoeff, input)
-		
-		#browser()
+		#
 		vars <- getVariables(wData, input, session)
-		HTML(makeTable(vars[[1]][,1], vars[[2]][,1],
-									 view=as.numeric(view$table),
-									 coeff=as.numeric(unlist(coeff)),
-									 collab=names(vars[[2]])[1],
-									 rowlab=names(vars[[1]])[1])
-									 )
+		tab  <- table(vars[[1]][,1], vars[[2]][,1], dnn=c(names(vars[[1]])[1], names(vars[[2]])[1]))
+		ct   <- contingencyTable(tab)
+#			'Absolute frequencies',
+#							'Relative frequencies',
+#							'Rowwise frequencies',
+#							'Columnwise frequencies',
+#							'Expected frequencies',
+#							'Residuals',
+#							'Studentized residuals',
+#							'Squared residuals')
+		cth <- switch(as.numeric(view$table),
+									table2html(ct$observed, colsums="Column sums", rowsums="Row sums"),
+									table2html(ct$observed/sum(ct$observed), digits=3, colsums="Column sums", rowsums="Row sums"),
+									table2html(ct$observed/rowSums(ct$observed), digits=3, rowsums="Row sums"),
+									table2html(ct$observed/colSums(ct$observed), digits=3, colsums="Column sums"),
+									table2html(ct$expected, digits=3, colsum="Column sums", rowsums="Row sums"),
+									table2html(ct$residuals, digits=3),
+									table2html(ct$stdres, digits=3),
+									table2html(ct$residuals^2, digits=3, colsum="Column sums", rowsums="Row sums")
+					 )
+		ctab <- switch(as.numeric(coeff$))
+	  HTML(cth)
 	})
 }
 

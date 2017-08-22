@@ -29,8 +29,8 @@ logic that prevents the invalidateLater from being run.
 \examples{
 \dontrun{
   # Press ESC after finishing the app
-  demo(testDrawSample)
-  demo(testDrawSampleLang)
+  shinyDemo('testDrawSample')
+  shinyDemo('testDrawSampleLang')
 }
 }
 \seealso{

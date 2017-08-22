@@ -30,10 +30,9 @@ The parameter \code{N} from \code{widgetHypergeometric} is equal to \code{m+n} f
 }
 \examples{
 \dontrun{
-  # Press ESC after finishing the demo
-  demo(testHypergeometric)
-  demo(testHypergeometricLang)
-  demo(mmstatDiscreteDistribution)
+  shinyDemo('testHypergeometric')
+  shinyDemo('testHypergeometricLang')
+  shinyDemo('mmstatDiscreteDistribution')
 }
 }
 \seealso{

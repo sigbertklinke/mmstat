@@ -18,10 +18,9 @@
 #'
 #' @examples
 #' \dontrun{
-#'   # Press ESC after finishing the demo
-#'   demo(testHypergeometric)
-#'   demo(testHypergeometricLang)
-#'   demo(mmstatDiscreteDistribution)
+#'   shinyDemo('testHypergeometric')
+#'   shinyDemo('testHypergeometricLang')
+#'   shinyDemo('mmstatDiscreteDistribution')
 #' }
 widgetHypergeometric <- function(inputId,
 								 							 	 N=list(), M=list(), n=list(),

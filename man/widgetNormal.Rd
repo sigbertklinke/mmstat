@@ -28,12 +28,11 @@ UI element is not drawn, but this value delivered back by \code{getValues}.
 }
 \examples{
 \dontrun{
-  # Press ESC after finishing the demo
-  demo(testNormal)
-  demo(testNormalConst)
-  demo(testNormalLang)
-  demo(testNormalInputId)
-  demo(mmstatContinuousDistribution)
+  shinyDemo('testNormal')
+  shinyDemo('testNormalConst')
+  shinyDemo('testNormalLang')
+  shinyDemo('testNormalInputId')
+  shinyDemo('mmstatContinuousDistribution')
 }
 }
 \seealso{

@@ -12,7 +12,6 @@
 #' result that app start with second language as default rather then with the first.
 #'  
 #' @param env widget
-#' @param lang selected language
 #' @param session session parameter of the server function
 #' @param elem element of widget to render, if NULL the whole widget will be rendered
 #'
@@ -29,7 +28,7 @@
 #' \dontrun{
 #'   # Open in browser and add "?widget.size=11" to the URL to set the starting
 #'   # value to 11
-#'   demo(testBinomialSession)
+#'   shinyDemo('testBinomialSession')
 #' }
 renderWidget <- function(env, session=NULL, elem=NULL) {
 	# find ui elems

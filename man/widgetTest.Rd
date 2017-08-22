@@ -26,9 +26,8 @@ If \code{alternative} or \code{level} ist set to NULL then the corresponding wid
 }
 \examples{
 \dontrun{
-  # Press ESC after finishing the app
-  demo(testTest)
-  demo(testTestLang)
+  shinyDemo('testTest')
+  shinyDemo('testTestLang')
 }
 }
 \seealso{

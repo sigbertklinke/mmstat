@@ -27,8 +27,7 @@ To find the location of the PO files use
 }
 \examples{
 \dontrun{
-  # Press ESC to finish the app(s)
-  demo(testLanguage)
+ shinyDemo('testLanguage')
 }
 }
 \seealso{

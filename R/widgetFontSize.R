@@ -12,9 +12,8 @@
 #'
 #' @examples
 #' \dontrun{
-#'   # Press ESC after finishing the demo
-#'   demo(testFontSize)
-#'   demo(testFontSizeLang)
+#'   shinyDemo('testFontSize')
+#'   shinyDemo('testFontSizeLang')
 #' }
 widgetFontSize <- function (inputId,
 														fontsize=list(),

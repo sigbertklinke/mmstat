@@ -6,9 +6,9 @@ wLang  <- widgetLanguage('lang')
 wFont  <- widgetFontSize('font', lang=wLang)
 wDist  <- widgetSelect(list(inputId='dist',
 													  label="Select a distribution type",
-														choices=c("Binomial distribution",
-																			"Hypergeometric distribution",
-																			"Poisson distribution")),
+														choices=enumChoices(c("Binomial distribution",
+																			          "Hypergeometric distribution",
+																			          "Poisson distribution"))),
 											 lang=wLang)
 wBinom <- widgetBinomial('binom', lang=wLang)
 wHyper <- widgetHypergeometric('hyper', M=list(value=10), n=list(value=5), lang=wLang)
@@ -73,7 +73,7 @@ makePlot <- function(dist, binom, hyper, pois, pcdf, refit, cex) {
 	  								ylab="f(x)", xlab="x", main=main,
 	  								cex.axis=cex, cex.lab=cex, cex.main=1.2*cex, cex.sub=cex)
 	  axis(1, at=mp, labels=x, cex.axis=cex)
-	  axis(2, cex.axis=cex)
+	  axis(2, cex.axis=cex)	
 	} else {
 		if (dist==1) {
 			y    <- pbinom(x, size=binom$size, prob=binom$prob)
@@ -112,43 +112,30 @@ ui <- dashboardPage(
 	),
 	dashboardBody(
 		fluidRow(
-			tabBox(
-				title = "First tabBox",
-				id = "tabset",
-				width = 12,
-				tabPanel("Main", plotOutput("out")),
-				tabPanel("Help", "Help")
-			)
+			box(plotOutput("out"))
 		)
 	)
 )
-
-
 
 server <- function(input, output, session) {
 	
 	widgetObserve(wHyper, input, session)
 	output$widgetDist  <- renderUI({ renderWidget(wDist, 
-																								lang=input[[getInputs(wLang)]],
 																								session=session) })
 	output$widgetParam <- renderUI({ ret <- renderPanel(getInputs(wDist),
 	                                             wBinom,
 	                                             wHyper,
 	                                             wPois,
-																							 lang=input[[getInputs(wLang)]],
 																							 session=session)
 	ret
 	})
 	output$widgetPCDF <- renderUI({ renderWidget(wPCDF,
-																							 lang=input[[getInputs(wLang)]],
 																							 session=session) })
 	output$options <- renderUI({
 		menuItem(getText('Options', wLang),
 						 renderWidget(wLang, 
-						 						 lang=input[[getInputs(wLang)]],
 						 						 session=session),
 						 renderWidget(wFont, 
-						 						 lang=input[[getInputs(wLang)]],
 						 						 session=session))
 	})
 	

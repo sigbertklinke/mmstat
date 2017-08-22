@@ -10,7 +10,9 @@ Depends:
     R (>= 3.2.5),
 License: GPL-2
 Imports:
+    graphics,
     utils,
-    shiny (>= 0.13.2)
+    shiny (>= 0.13.2),
+    DescTools
 LazyData: true
 RoxygenNote: 6.0.1

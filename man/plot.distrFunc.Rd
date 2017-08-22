@@ -4,11 +4,11 @@
 \alias{plot.distrFunc}
 \title{plot.distrFunc}
 \usage{
-\method{plot}{distrFunc}(type, add = F, xlim = NULL, ylim = NULL,
+\method{plot}{distrFunc}(x, add = F, xlim = NULL, ylim = NULL,
   cex.lettering = 1, n = 501, ...)
 }
 \arguments{
-\item{type}{distribution function object}
+\item{x}{distribution function object}
 
 \item{add}{logical: add to current plot (default: add=F)}
 
@@ -39,7 +39,7 @@ plot(d)
 # quantile
 d <- distrFunc("norm", func="q")
 plot(d)
-## Geoimetric distribution (continuous)
+## Geometric distribution (continuous)
 # density
 d <- distrFunc("geom", prob=0.5)
 plot(d)

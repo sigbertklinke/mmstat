@@ -21,8 +21,7 @@ Widget for a percentage value
 }
 \examples{
 \dontrun{
-  # Press ESC after finishing the app
-  demo(testPercentage)
-  demo(testPercentageLang)
+  shinyDemo('testPercentage')
+  shinyDemo('testPercentageLang')
 }
 }

@@ -6,7 +6,9 @@ ui <- dashboardPage(
 	dashboardHeader(title="Test", titleWidth=300),
 	dashboardSidebar(width=300,
 									 uiOutput("widgetUI"),
-									 uiOutput("langUI")
+									 uiOutput("langUI"),
+									 uiOutput("helpUI")
+									 
 	),
 	dashboardBody(
 		fluidRow(
@@ -17,11 +19,16 @@ ui <- dashboardPage(
 
 l <- widgetLanguage('lang')
 w <- widgetBinomial('widget', lang=l)
- 
-server <- function(input, output, session) {
+h <- widgetHelpButton('help', url='https://en.wikipedia.org/wiki/Binomial_distribution', lang=l)
 
-	output$widgetUI <- renderUI({ renderWidget(w, lang=input[[getInputs(l)]]) })
-	output$langUI   <- renderUI({ renderWidget(l, lang=input[[getInputs(l)]]) })
+server <- function(input, output, session) {
+  widgetObserve(l, input, session)
+  widgetObserve(w, input, session)  
+  widgetObserve(h, input, session)
+  
+  output$helpUI <- renderUI({ renderWidget(h) })
+  output$widgetUI <- renderUI({ renderWidget(w) })
+  output$langUI   <- renderUI({ renderWidget(l) })
 	
   output$out <- renderPrint({
   	inp <- getValues(w, input)

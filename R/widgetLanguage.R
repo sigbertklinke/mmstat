@@ -55,8 +55,7 @@ getText <- function(msg, env=NULL) {
 #'
 #' @examples
 #' \dontrun{
-#'   # Press ESC to finish the app(s)
-#'   demo(testLanguage)
+#'  shinyDemo('testLanguage')
 #' }
 widgetLanguage <- function(inputId, lang=list(), path=NULL) {
 	init <- function() {
@@ -104,14 +103,14 @@ widgetLanguage <- function(inputId, lang=list(), path=NULL) {
       	#
       	args <- list()
     	  args$inputId <- paste(envi[['widgetId']], id, sep=".")
-    	  ppp          <- getShinyFunction(func)$lang
+    	  ppp          <- mmstat.env$pp[[func]]$lang
     	  if (!is.null(ppp)) {
     	  	for (k in seq(length(ppp))) {
     	  		args[[ppp[k]]] <- envi[['ui']][[i]]$args[[ppp[k]]]
     	  		if (!is.null(args[[ppp[k]]])) args[[ppp[k]]] <- getText(args[[ppp[k]]], env[['lang']])
     	  	}
     	  }
-    	  ppp <- getShinyFunction(func)$langnames
+    	  ppp <- mmstat.env$pp[[func]]$langnames
     	  if (!is.null(ppp)) {
     	    for (k in seq(length(ppp)))	{
     	    	args[[ppp[k]]] <- envi[['ui']][[i]]$args[[ppp[k]]]
@@ -120,13 +119,13 @@ widgetLanguage <- function(inputId, lang=list(), path=NULL) {
     	  }
     	  if (length(args)>1) {
     	  	# Copy parameters from input if necessary
-    	  	ppp  <- getShinyFunction(func)$input
+    	  	ppp  <- mmstat.env$pp[[func]]$input
     	  	if (!is.null(ppp)) {
     	  		for (k in seq(length(ppp)))	{
     	  			args[[ppp[k]]] <- isolate(input[[args$inputId]])
     	  		}
     	  	}
-    	  	updt <- getShinyFunction(func)$update
+    	  	updt <- mmstat.env$pp[[func]]$update
     	  	args$session <- session
       	  do.call(updt, args)
         }

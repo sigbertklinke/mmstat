@@ -35,11 +35,10 @@ The widget must be used together with \code{widgetVariables}.
 }
 \examples{
 \dontrun{
-  # Press ESC after finishing the app
-  demo(testDataset1) # one variable
-  demo(testDataset2) # two variables
-  demo(testDataset3) # two variables: one numeric, one factor
-  demo(testDataset3Lang)
+  shinyDemo('testDataset1') # one variable
+  shinyDemo('testDataset2') # two variables
+  shinyDemo('testDataset3') # two variables: one numeric, one factor
+  shinyDemo('testDataset3Lang')
 }
 }
 \seealso{
