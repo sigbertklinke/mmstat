@@ -6,14 +6,12 @@ wLang  <- widgetLanguage('lang')
 wFont  <- widgetFontSize('font', lang=wLang)
 wDist  <- widgetSelect(list(inputId='dist',
 													  label="Select a distribution type",
-														choices=c("Exponential distribution",
-																			"Normal distribution")),
+														choices=enumChoices(c("Exponential distribution",
+																			            "Normal distribution"))),
 											 lang=wLang)
 wExp   <- widgetIntensity('exp', lang=wLang)
 wNorm  <- widgetNormal('norm', lang=wLang)
-wPCDF  <- widgetPCDF('pcdf', pcdf=list(choices=c("Probability density function", 
-                                                 "Cumulative distribution function")), 
-                     lang=wLang)
+wPCDF  <- widgetPCDF('pcdf', lang=wLang)
 
 mmstat <- new.env()
 
@@ -53,7 +51,7 @@ makePlot <- function(dist, exp, norm, pcdf, refit, cex) {
 	             '1'=c(0, qexp(0.999, exp$lambda)),
 		 					 '2'=norm$mean+norm$sd*c(qnorm(0.001), qnorm(0.999)))
   x  <- min(xr)+(0:500)/500*diff(range(xr))			
-	if (pcdf$pcfunc==1) { 
+	if (pcdf$pcfunc=='1') { 
 		if (dist==1) {
 		  y    <- dexp(x, rate=exp$lambda)
 		  fmt  <- getText('Probability density function of Exp(%.2f)', wLang)
@@ -100,51 +98,38 @@ ui <- dashboardPage(
 	),
 	dashboardBody(
 		fluidRow(
-			tabBox(
-				title = "First tabBox",
-				id = "tabset",
-				width = 12,
-				tabPanel("Main", plotOutput("out")),
-				tabPanel("Help", "Help")
-			)
+				plotOutput("out")
 		)
 	)
 )
 
-
-
 server <- function(input, output, session) {
 	
+	widgetObserve(wLang, input, session)
 	output$widgetDist  <- renderUI({ renderWidget(wDist, 
-																								lang=input[[getInputs(wLang)]],
 																								session=session) })
 	output$widgetParam <- renderUI({ ret <- renderPanel(getInputs(wDist),
 	                                             wExp,
 	                                             wNorm,
-																							 lang=input[[getInputs(wLang)]],
 																							 session=session)
 	                                 ret
 	})
 	output$widgetPCDF <- renderUI({ renderWidget(wPCDF,
-																							 lang=input[[getInputs(wLang)]],
 																							 session=session) })
 	output$options <- renderUI({
 		menuItem(getText('Options', wLang),
 						 renderWidget(wLang, 
-						 						 lang=input[[getInputs(wLang)]],
 						 						 session=session),
 						 renderWidget(wFont, 
-						 						 lang=input[[getInputs(wLang)]],
 						 						 session=session))
 	})
 	
-		
 	output$out <- renderPlot({
 	  button <- widgetValueChanged(wPCDF, input)
 	  makePlot(input[[getInputs(wDist)]],
 	           getValues(wExp, input),
 	           getValues(wNorm, input),
-	           getValues(wPCDF, input),
+	           getValues(wPCDF, input, simplify = TRUE),
 	           button$refit,
 	  				 input[[getInputs(wFont)]])
 	})

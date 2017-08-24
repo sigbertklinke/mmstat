@@ -28,8 +28,8 @@ widgetPCDF <- function(inputId,
 	env[['lang']]     <- lang
 	# pcdf
 	args <- list(inputId='pcfunc', label="Choose",
-							 choices=c("Probability mass function", 
-												 "Cumulative distribution function")
+							 choices=enumChoices(c("Probability mass function", 
+												             "Cumulative distribution function"))
 							)
 	env[['ui']]$pcdf <- list(func='radioButtons',
 													 args=mergeListsByName(pcdf, args))	
