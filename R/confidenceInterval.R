@@ -143,8 +143,8 @@ confidenceInterval.default <- function(x, CI, param=NULL, sample=25, size=length
 #' ci <- confidenceInterval(x, CI.mean)
 #' plot(ci)
 plot.confidenceInterval <- function(x, 
-																		population=list(pch=19, cex=0.5, col=mmstatPar('col.population')[1]), 
-																		sample=list(pch=19, cex=0.25, col=mmstatPar('col.sample')[1]), 
+																		population=list(pch=19, cex=0.5, col=getOption('mmstat.col.population')[1]), 
+																		sample=list(pch=19, cex=0.25, col=getOption('mmstat.col.sample')[1]), 
 																		ci.lines=list(lwd=1, col=c("black", "red")), 
 																		ci.points=list(pch=19, cex=0.5, col=c("black", "red")),
 																		param.abline=list(col="red"),

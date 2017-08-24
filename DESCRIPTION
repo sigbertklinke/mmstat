@@ -13,6 +13,7 @@ Imports:
     graphics,
     utils,
     shiny (>= 0.13.2),
+    shinyBS,
     DescTools
 LazyData: true
 RoxygenNote: 6.0.1

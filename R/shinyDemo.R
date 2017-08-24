@@ -3,6 +3,8 @@
 #' Runs a shiny app similar to \code{demo}.
 #'
 #' @param example character: name of the example
+#' @param launch.browser logical: 	
+#' If true, the system's default web browser will be launched automatically after the app is started (default: \code{FALSE})
 #'
 #' @references Based on \href{http://deanattali.com/2015/04/21/r-package-shiny-app/}{Supplementing your R package with a Shiny app} by Dean Attali. 
 #' @export
@@ -14,7 +16,7 @@
 #'   # to run one app 
 #'   shinyDemo('mmstatContinuousDistribution')
 #' }
-shinyDemo <- function(example) {
+shinyDemo <- function(example, launch.browser=FALSE) {
 	# locate all the shiny app examples that exist
 	validExamples <- list.files(system.file("shiny-demo", package = "mmstat"), pattern="*.R")
 	
@@ -41,5 +43,5 @@ shinyDemo <- function(example) {
   }
 	# find and launch the app
 	appDir <- system.file("shiny-demo", validExample, package = "mmstat")
-	shiny::runApp(appDir, display.mode = "normal")
+	shiny::runApp(appDir, display.mode = "normal", launch.browser=launch.browser)
 }

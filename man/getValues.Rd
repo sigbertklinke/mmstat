@@ -4,18 +4,21 @@
 \alias{getValues}
 \title{Input values for a widget}
 \usage{
-getValues(env, input)
+getValues(env, input, simplify = FALSE)
 }
 \arguments{
 \item{env}{widget}
 
-\item{input}{current values of all of the widgets in your app. Is the first parameter of the \code{server} function.}
+\item{input}{list: named list of input values in your app. It is the first parameter of the \code{server} function.}
+
+\item{simplify}{logical: should return be simplified (default: \code{FALSE})}
 }
 \value{
 named list with the values
 }
 \description{
-Input values for a widget
+Returns a named list of input values for widget. If \code{simplify} is set to \code{TRUE} then a list with 
+one element just returns this element instead of a list.
 }
 \examples{
 w <- widgetFontSize('widget')

@@ -5,10 +5,11 @@
 \title{plot.confidenceInterval}
 \usage{
 \method{plot}{confidenceInterval}(x, population = list(pch = 19, cex = 0.5,
-  col = mmstatPar("col.population")[1]), sample = list(pch = 19, cex = 0.25,
-  col = mmstatPar("col.sample")[1]), ci.lines = list(lwd = 1, col = c("black",
-  "red")), ci.points = list(pch = 19, cex = 0.5, col = c("black", "red")),
-  param.abline = list(col = "red"), text.population = "Population", ...)
+  col = getOption("mmstat.col.population")[1]), sample = list(pch = 19, cex =
+  0.25, col = getOption("mmstat.col.sample")[1]), ci.lines = list(lwd = 1, col
+  = c("black", "red")), ci.points = list(pch = 19, cex = 0.5, col = c("black",
+  "red")), param.abline = list(col = "red"), text.population = "Population",
+  ...)
 }
 \arguments{
 \item{x}{confidence interval object}

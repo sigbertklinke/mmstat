@@ -4,10 +4,13 @@
 \alias{shinyDemo}
 \title{shinyDemo}
 \usage{
-shinyDemo(example)
+shinyDemo(example, launch.browser = FALSE)
 }
 \arguments{
 \item{example}{character: name of the example}
+
+\item{launch.browser}{logical:
+If true, the system's default web browser will be launched automatically after the app is started (default: \code{FALSE})}
 }
 \description{
 Runs a shiny app similar to \code{demo}.

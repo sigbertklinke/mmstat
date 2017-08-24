@@ -2,8 +2,8 @@
 #' 
 #' This the basic function to encapsulate all shiny input elements. If you do not need a language change on-the-fly then you should use shiny input element.
 #' traceback()
-#' @param input input element, either a function or function name
-#' @param param list of parameters for the input element
+#' @param input input element: either a function or function name
+#' @param param list: parameters for the input element
 #' @param lang  language widget (or NULL)
 #'
 #' @return a widget object (environment)

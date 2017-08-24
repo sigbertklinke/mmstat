@@ -7,9 +7,9 @@
 widgetShiny(input, param, lang)
 }
 \arguments{
-\item{input}{input element, either a function or function name}
+\item{input}{input element: either a function or function name}
 
-\item{param}{list of parameters for the input element}
+\item{param}{list: parameters for the input element}
 
 \item{lang}{language widget (or NULL)}
 }

@@ -2,12 +2,12 @@
 % Please edit documentation in R/contingencyTable.R
 \name{association}
 \alias{association}
-\title{coefficients}
+\title{association}
 \usage{
-association(ft, ...)
+association(ct, ...)
 }
 \arguments{
-\item{ft}{contingency table object}
+\item{ct}{contingency table object}
 
 \item{...}{list: coefficients in the table}
 }
@@ -23,20 +23,22 @@ Extracts all requested association coefficients as two dimensional table. Possib
 \item{\code{C}}{Contingency value}
 \item{\code{CC}}{Corrected c ontingency value}
 \item{\code{V}}{Cramers V or phi}
-\item{\code{lambda}}{All three Goodman and Kruskal lambdas}
 \item{\code{lambda.cr}}{Goodman and Kruskal lambda, column dependent}
 \item{\code{lambda.rc}}{Goodman and Kruskal lambda, row dependent}
 \item{\code{lambda.sym}}{Goodman and Kruskal lambda, symmetric}
-\item{\code{gkt}}{Both Goodman and Kruskal taus}
 \item{\code{gkt.cr}}{Goodman and Kruskal tau, column dependent}
 \item{\code{gkt.rc}}{Goodman and Kruskal tau, row dependent}
-\item{\code{theil}}{All three uncertainty coefficients/Theil's U}
 \item{\code{theil.cr}}{Uncertainty coefficient/Theil's U, column dependent}
 \item{\code{theil.rc}}{Uncertainty coefficient/Theil's U, row dependent}
 \item{\code{theil.sym}}{Uncertainty coefficient/Theil's U, symmetric}
+\item{\code{chisquare}}{All four chi square based coefficients}
+\item{\code{lambda}}{All three Goodman and Kruskal lambdas}
+\item{\code{gkt}}{Both Goodman and Kruskal taus}
+\item{\code{theil}}{All three uncertainty coefficients/Theil's U}
 }
 }
 \examples{
 ct <- contingencyTable(HairEyeColor[,,"Female"])
-coefficients(ct, lambda=TRUE)
+association(ct, chisq=TRUE)
+association(ct, chisquare=TRUE)
 }

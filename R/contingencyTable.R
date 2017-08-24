@@ -53,7 +53,20 @@ contingencyTable <- function (tab) {
 	ret
 }
 
-#' coefficients
+argsUngroup <- function (arggroups, args) {
+	narg <- names(arggroups)
+	for (arg in narg) {
+	  if (!is.null(args[[arg]])) {
+	  	for (argi in arggroups[[arg]]) {
+	  		args[[argi]] <- args[[arg]]
+	  	}
+	  	args[[arg]] <- NULL
+	  }	
+	}
+	args
+}
+
+#' association
 #' 
 #' Extracts all requested association coefficients as two dimensional table. Possible names are:
 #' 
@@ -62,20 +75,21 @@ contingencyTable <- function (tab) {
 #' \item{\code{C}}{Contingency value}
 #' \item{\code{CC}}{Corrected c ontingency value}
 #' \item{\code{V}}{Cramers V or phi}
-#' \item{\code{lambda}}{All three Goodman and Kruskal lambdas}
 #' \item{\code{lambda.cr}}{Goodman and Kruskal lambda, column dependent}
 #' \item{\code{lambda.rc}}{Goodman and Kruskal lambda, row dependent}
 #' \item{\code{lambda.sym}}{Goodman and Kruskal lambda, symmetric}
-#' \item{\code{gkt}}{Both Goodman and Kruskal taus}
 #' \item{\code{gkt.cr}}{Goodman and Kruskal tau, column dependent}
 #' \item{\code{gkt.rc}}{Goodman and Kruskal tau, row dependent}
-#' \item{\code{theil}}{All three uncertainty coefficients/Theil's U}
 #' \item{\code{theil.cr}}{Uncertainty coefficient/Theil's U, column dependent}
 #' \item{\code{theil.rc}}{Uncertainty coefficient/Theil's U, row dependent}
 #' \item{\code{theil.sym}}{Uncertainty coefficient/Theil's U, symmetric}
+#' \item{\code{chisquare}}{All four chi square based coefficients}
+#' \item{\code{lambda}}{All three Goodman and Kruskal lambdas}
+#' \item{\code{gkt}}{Both Goodman and Kruskal taus}
+#' \item{\code{theil}}{All three uncertainty coefficients/Theil's U}
 #' }
 #'
-#' @param ft contingency table object
+#' @param ct contingency table object
 #' @param ... list: coefficients in the table
 #'
 #' @return a two dimensional table
@@ -83,13 +97,19 @@ contingencyTable <- function (tab) {
 #'
 #' @examples
 #' ct <- contingencyTable(HairEyeColor[,,"Female"])
-#' coefficients(ct, lambda=TRUE)
-association <- function (ft, ...) {
+#' association(ct, chisq=TRUE)
+#' association(ct, chisquare=TRUE)
+association <- function (ct, ...) {
 	args   <- list(...)
+	args   <- argsUngroup(list(chisquare = c('C', 'CC', 'chisq', 'V'),
+														 lambda    = c('lambda.cr',	'lambda.rc', 'lambda.sym'),
+														 gkt       = c('gkt.rc', 'gkt.cr'),
+														 theil     = c('theil.rc', 'theil.cr', 'theil.sym')), 
+												args)
 	coeffs <- c('C'          = 'CHISQUARE.C', 
 							'CC'         = 'CHISQUARE.CC',
 							'chisq'      = 'CHISQUARE.VAL',
-							'V'          = 'CHISQUARE.V', 
+							'V'          = 'CHISQUARE.V',
 							'lambda.cr'  = 'GKLAMBDA.CR', 
 							'lambda.rc'  = 'GKLAMBDA.RC', 
 							'lambda.sym' = 'GKLAMBDA.SYM', 
@@ -98,19 +118,10 @@ association <- function (ft, ...) {
 							'theil.rc'   = 'THEILU.RC', 
 							'theil.cr'   = 'THEILU.CR', 
 							'theil.sym'  = 'THEILU.SYM')
-	coeffl <- c('lambda', 'gkt', 'theil')
 	ret    <- c()
-	for (coef in names(coeffs)) {
-		if (!is.null(args[[coef]]) && args[[coef]]) {
-			ret[coeffs[coef]] <- ft[[coef]] 
-		}
-	}
-	for (coef in coeffl) {
-		if (!is.null(args[[coef]]) && args[[coef]]) {
-			tf <- startsWith(names(coeffs), coef)
-			for (coeftf in names(coeffs)[tf]) {
-				ret[coeffs[coeftf]] <- ft[[coeftf]] 
-			}
+	for (coeff in names(coeffs)) {
+		if (!is.null(args[[coeff]]) && args[[coeff]]) {
+			ret[coeffs[coeff]] <- ct[[coeff]]
 		}
 	}
 	if (length(ret)==0) return(NULL)
