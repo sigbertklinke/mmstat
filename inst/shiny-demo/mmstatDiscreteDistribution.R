@@ -119,6 +119,7 @@ ui <- dashboardPage(
 
 server <- function(input, output, session) {
 	
+	widgetObserve(wLang, input, session)
 	widgetObserve(wHyper, input, session)
 	output$widgetDist  <- renderUI({ renderWidget(wDist, 
 																								session=session) })
