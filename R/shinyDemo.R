@@ -14,9 +14,9 @@
 #'   # to view all possible apps
 #'   shinyDemo()
 #'   # to run one app 
-#'   shinyDemo('mmstatContinuousDistribution')
+#'   shinyDemo('mmstatContinuousDistribution.R')
 #' }
-shinyDemo <- function(example, launch.browser=FALSE) {
+shinyDemo <- function(example, launch.browser=getOption("shiny.launch.browser", interactive())) {
 	# locate all the shiny app examples that exist
 	validExamples <- list.files(system.file("shiny-demo", package = "mmstat"), pattern="*.R")
 	

@@ -4,7 +4,8 @@
 \alias{shinyDemo}
 \title{shinyDemo}
 \usage{
-shinyDemo(example, launch.browser = FALSE)
+shinyDemo(example, launch.browser = getOption("shiny.launch.browser",
+  interactive()))
 }
 \arguments{
 \item{example}{character: name of the example}
@@ -20,7 +21,7 @@ Runs a shiny app similar to \code{demo}.
   # to view all possible apps
   shinyDemo()
   # to run one app 
-  shinyDemo('mmstatContinuousDistribution')
+  shinyDemo('mmstatContinuousDistribution.R')
 }
 }
 \references{
