@@ -4,7 +4,7 @@
 \alias{widgetShiny}
 \title{Encapsulates a Shiny input element}
 \usage{
-widgetShiny(input, param, lang)
+widgetShiny(input, param, lang, tooltip = NULL)
 }
 \arguments{
 \item{input}{input element: either a function or function name}
@@ -12,6 +12,8 @@ widgetShiny(input, param, lang)
 \item{param}{list: parameters for the input element}
 
 \item{lang}{language widget (or NULL)}
+
+\item{tooltip}{character or list: text of tooltip or parameter list for \code{\link[shinyBS]{bsTooltip}}}
 }
 \value{
 a widget object (environment)

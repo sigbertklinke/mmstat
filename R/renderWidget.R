@@ -62,6 +62,17 @@ renderWidget <- function(env, session=NULL, elem=NULL) {
       if (func!='constant') {
       	ret[[i]] <- do.call(func, args)
       }
+      tooltip <- env[['ui']][[posi]]$tooltip
+      if(!is.null(tooltip)) {
+      	if (is.character(tooltip)) {
+      		targs <- list(title=tooltip, placement="right", trigger="hover")
+      	} else {
+      		targs         <- tooltip
+      		targs$id      <- args$inputId
+      	}
+      	targs$el <- ret[[i]]
+      	ret[[i]] <- do.call('tipify', targs)	
+      }
     }
   }
   return(ret)

@@ -1,4 +1,5 @@
 library("shiny")
+library("shinyBS")
 library("shinydashboard")
 library("mmstat")
 library("DescTools")
@@ -8,27 +9,28 @@ wFont  <- widgetFontSize('font', lang=wLang)
 wTable <- widgetSelect(list(inputId='table',
 													  label='Table view',
 														choices=enumChoices(
-															        c('Absolute frequencies',
-																	      'Relative frequencies',
-																			  'Rowwise frequencies',
-																			  'Columnwise frequencies',
-																			  'Expected frequencies',
-																			  'Residuals',
-																			  'Studentized residuals',
-														       		  'Squared residuals'))
+															        'Absolute frequencies',
+																	    'Relative frequencies',
+																			'Rowwise frequencies',
+																			'Columnwise frequencies',
+																			'Expected frequencies',
+																			'Residuals',
+																			'Studentized residuals',
+														       		'Squared residuals')
                                        ),
 											 lang=wLang)
 wCoeff <- widgetSelect(list(inputId='coeff',
 														label='Coefficients',
 														choices=enumChoices(
-															        c('Chi square based',
-																			  'Goodman & Kruskals Lambda',
-																			  'Goodman & Kruskals Tau',
-																			  'Uncertainty')), 
+															        'Chi square based',
+																			'Goodman & Kruskals Lambda',
+																			'Goodman & Kruskals Tau',
+																			'Uncertainty'), 
 														size=3,
 														selectize = FALSE,
 														multiple  = TRUE),
-												lang=wLang)
+											 tooltip = "Use Ctrl/Shift to select more than one entry",
+											 lang=wLang)
 wData <- widgetDataset('widget', lang=wLang)
 widgetVariables(wData, list(vartype=is.factor), list(vartype=is.factor))
 

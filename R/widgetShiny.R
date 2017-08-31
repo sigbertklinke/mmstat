@@ -5,6 +5,7 @@
 #' @param input input element: either a function or function name
 #' @param param list: parameters for the input element
 #' @param lang  language widget (or NULL)
+#' @param tooltip character or list: text of tooltip or parameter list for \code{\link[shinyBS]{bsTooltip}}
 #'
 #' @return a widget object (environment)
 #' @export
@@ -13,10 +14,10 @@
 #' @examples
 #' library('shiny')
 #' widgetShiny(sliderInput, list(inputId='slider', label='My slider', min=0, max=10), lang=NULL)
-widgetShiny <- function (input, param, lang) {
+widgetShiny <- function (input, param, lang, tooltip=NULL) {
 	env               <- widget('shiny', lang)
 	func              <- if (is.function(input)) as.character(substitute(input)) else as.character(input) 
-	env[['ui']]$shiny <- list(func=func, args=param)
+	env[['ui']]$shiny <- list(func=func, args=param, tooltip=tooltip)
 	return(env)
 }
 
@@ -159,7 +160,7 @@ widgetRadioButtons  <- function (param, lang) { widgetShiny(radioButtons, param,
 #'                                "Transmission" = "am",
 #'                                "Gears" = "gear")),
 #'              lang=NULL)
-widgetSelect <- function (param, lang) { widgetShiny(selectInput, param, lang) }
+widgetSelect <- function (param, lang, tooltip=NULL) { widgetShiny(selectInput, param, lang, tooltip) }
 
 #' Encapsulates a Shiny \code{sliderInput}
 #' 

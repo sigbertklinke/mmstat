@@ -4,7 +4,7 @@
 \alias{widgetSelect}
 \title{Encapsulates a Shiny \code{selectInput}}
 \usage{
-widgetSelect(param, lang)
+widgetSelect(param, lang, tooltip = NULL)
 }
 \arguments{
 \item{param}{list of parameters for \code{selectInput}}
