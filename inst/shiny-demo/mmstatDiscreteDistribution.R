@@ -6,9 +6,9 @@ wLang  <- widgetLanguage('lang')
 wFont  <- widgetFontSize('font', lang=wLang)
 wDist  <- widgetSelect(list(inputId='dist',
 													  label="Select a distribution type",
-														choices=enumChoices(c("Binomial distribution",
+														choices=enumChoices("Binomial distribution",
 																			          "Hypergeometric distribution",
-																			          "Poisson distribution"))),
+																			          "Poisson distribution")),
 											 lang=wLang)
 wBinom <- widgetBinomial('binom', lang=wLang)
 wHyper <- widgetHypergeometric('hyper', M=list(value=10), n=list(value=5), lang=wLang)

@@ -5,970 +5,773 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 17:33+0200\n"
-"PO-Revision-Date: 2016-08-02 17:34+0100\n"
-"Last-Translator: Sigbert Klinke <sigbert@wiwi.hu-berlin.de>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2017-08-29 09:48+0200\n"
+"PO-Revision-Date: 2017-08-29 10:03+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 2.0.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gettext.log:1 gettext.log:7 gettext.log:13
-msgid "Sample size"
-msgstr "Stichprobengröße"
-
-#: gettext.log:2 gettext.log:8 gettext.log:14
-msgid "Draw sample"
-msgstr "Ziehe Stichprobe"
-
-#: gettext.log:3 gettext.log:9 gettext.log:15
-msgid "Reset"
-msgstr "Zurücksetzen"
-
-#: gettext.log:4 gettext.log:10 gettext.log:16 gettext.log:19 gettext.log:22
-#: gettext.log:25 gettext.log:28 gettext.log:32 gettext.log:36 gettext.log:40
-#: gettext.log:44 gettext.log:48 gettext.log:52 gettext.log:56 gettext.log:60
-#: gettext.log:64 gettext.log:69 gettext.log:74 gettext.log:79 gettext.log:84
-#: gettext.log:89 gettext.log:94 gettext.log:99 gettext.log:104
-#: gettext.log:109 gettext.log:114 gettext.log:119 gettext.log:124
-#: gettext.log:128 gettext.log:133 gettext.log:138 gettext.log:143
-#: gettext.log:147 gettext.log:153 gettext.log:158 gettext.log:163
-#: gettext.log:168 gettext.log:173 gettext.log:179 gettext.log:188
-#: gettext.log:198 gettext.log:207 gettext.log:216 gettext.log:221
-#: gettext.log:227 gettext.log:234 gettext.log:240 gettext.log:246
-#: gettext.log:250 gettext.log:254 gettext.log:258 gettext.log:262
-#: gettext.log:265 gettext.log:268 gettext.log:271 gettext.log:274
-#: gettext.log:287 gettext.log:302 gettext.log:317 gettext.log:331
-#: gettext.log:352 gettext.log:493 gettext.log:634 gettext.log:768
-#: gettext.log:909 gettext.log:1032 gettext.log:1166 gettext.log:1170
-#: ../getText.log:3 ../getText.log:8 ../getText.log:13 ../getText.log:18
-#: ../getText.log:23 ../getText.log:28 ../getText.log:33 ../getText.log:64
-#: ../getText.log:82 ../getText.log:100 ../getText.log:118 ../getText.log:136
-#: ../getText.log:154 ../getText.log:172 ../getText.log:190 ../getText.log:208
-#: ../getText.log:226 ../getText.log:244 ../getText.log:262 ../getText.log:280
-#: ../getText.log:298 ../getText.log:316 ../getText.log:334 ../getText.log:352
-#: ../getText.log:370 ../getText.log:388 ../getText.log:406 ../getText.log:424
-#: ../getText.log:442 ../getText.log:460 ../getText.log:478 ../getText.log:496
-#: ../getText.log:514 ../getText.log:532 ../getText.log:550 ../getText.log:568
-#: ../getText.log:586 ../getText.log:604 ../getText.log:622 ../getText.log:640
-#: ../getText.log:658 ../getText.log:676 ../getText.log:694 ../getText.log:712
-#: ../getText.log:730 ../getText.log:742 ../getText.log:760 ../getText.log:778
-#: ../getText.log:796 ../getText.log:814 ../getText.log:832 ../getText.log:850
-#: ../getText.log:868 ../getText.log:886 ../getText.log:904 ../getText.log:922
-#: ../getText.log:940 ../getText.log:958 ../getText.log:979 ../getText.log:998
-#: ../getText.log:1026 ../getText.log:1051 ../getText.log:1072
-#: ../getText.log:1093 ../getText.log:1120 ../getText.log:1150
-#: ../getText.log:1208 ../getText.log:1230 ../getText.log:1248
-#: ../getText.log:1267 ../getText.log:1286 ../getText.log:1305
-#: ../getText.log:1324 ../getText.log:1343 ../getText.log:1362
-#: ../getText.log:1382 ../getText.log:1407 ../getText.log:1437
-#: ../getText.log:1457 ../getText.log:1478 ../getText.log:1498
-#: ../getText.log:1533 ../getText.log:1572 ../getText.log:1592
-#: ../getText.log:1611 ../getText.log:1631 ../getText.log:15 ../getText.log:35
-#: ../getText.log:58 ../getText.log:78 ../getText.log:97 ../getText.log:138
-#: ../getText.log:157 ../getText.log:179 ../getText.log:199 ../getText.log:218
-#: ../getText.log:246 ../getText.log:266 ../getText.log:286 ../getText.log:312
-#: ../getText.log:332 ../getText.log:360 ../getText.log:382 ../getText.log:425
-#: ../getText.log:445 ../getText.log:465 ../getText.log:485 ../getText.log:512
-#: ../getText.log:534 ../getText.log:554 ../getText.log:574 ../getText.log:596
-#: ../getText.log:612 ../getText.log:627 ../getText.log:642 ../getText.log:673
-#: ../getText.log:688 ../getText.log:703 ../getText.log:713 ../getText.log:787
-#: ../getText.log:803 ../getText.log:819
-msgid "Choose language"
-msgstr "Sprachauswahl"
-
-#: gettext.log:5 gettext.log:11 gettext.log:17 gettext.log:20 gettext.log:23
-#: gettext.log:26 gettext.log:29 gettext.log:33 gettext.log:37 gettext.log:41
-#: gettext.log:45 gettext.log:49 gettext.log:53 gettext.log:57 gettext.log:61
-#: gettext.log:65 gettext.log:70 gettext.log:75 gettext.log:80 gettext.log:85
-#: gettext.log:90 gettext.log:95 gettext.log:100 gettext.log:105
-#: gettext.log:110 gettext.log:115 gettext.log:120 gettext.log:125
-#: gettext.log:129 gettext.log:134 gettext.log:139 gettext.log:144
-#: gettext.log:148 gettext.log:154 gettext.log:159 gettext.log:164
-#: gettext.log:169 gettext.log:174 gettext.log:180 gettext.log:189
-#: gettext.log:199 gettext.log:208 gettext.log:217 gettext.log:222
-#: gettext.log:228 gettext.log:235 gettext.log:241 gettext.log:247
-#: gettext.log:251 gettext.log:255 gettext.log:259 gettext.log:263
-#: gettext.log:266 gettext.log:269 gettext.log:272 gettext.log:275
-#: gettext.log:288 gettext.log:303 gettext.log:318 gettext.log:332
-#: gettext.log:353 gettext.log:494 gettext.log:635 gettext.log:769
-#: gettext.log:910 gettext.log:1033 gettext.log:1167 gettext.log:1171
-#: ../getText.log:4 ../getText.log:9 ../getText.log:14 ../getText.log:19
-#: ../getText.log:24 ../getText.log:29 ../getText.log:34 ../getText.log:65
-#: ../getText.log:83 ../getText.log:101 ../getText.log:119 ../getText.log:137
-#: ../getText.log:155 ../getText.log:173 ../getText.log:191 ../getText.log:209
-#: ../getText.log:227 ../getText.log:245 ../getText.log:263 ../getText.log:281
-#: ../getText.log:299 ../getText.log:317 ../getText.log:335 ../getText.log:353
-#: ../getText.log:371 ../getText.log:389 ../getText.log:407 ../getText.log:425
-#: ../getText.log:443 ../getText.log:461 ../getText.log:479 ../getText.log:497
-#: ../getText.log:515 ../getText.log:533 ../getText.log:551 ../getText.log:569
-#: ../getText.log:587 ../getText.log:605 ../getText.log:623 ../getText.log:641
-#: ../getText.log:659 ../getText.log:677 ../getText.log:695 ../getText.log:713
-#: ../getText.log:731 ../getText.log:743 ../getText.log:761 ../getText.log:779
-#: ../getText.log:797 ../getText.log:815 ../getText.log:833 ../getText.log:851
-#: ../getText.log:869 ../getText.log:887 ../getText.log:905 ../getText.log:923
-#: ../getText.log:941 ../getText.log:959 ../getText.log:980 ../getText.log:999
-#: ../getText.log:1027 ../getText.log:1052 ../getText.log:1073
-#: ../getText.log:1094 ../getText.log:1121 ../getText.log:1151
-#: ../getText.log:1209 ../getText.log:1231 ../getText.log:1249
-#: ../getText.log:1268 ../getText.log:1287 ../getText.log:1306
-#: ../getText.log:1325 ../getText.log:1344 ../getText.log:1363
-#: ../getText.log:1383 ../getText.log:1408 ../getText.log:1438
-#: ../getText.log:1458 ../getText.log:1479 ../getText.log:1499
-#: ../getText.log:1534 ../getText.log:1573 ../getText.log:1593
-#: ../getText.log:1612 ../getText.log:1632 ../getText.log:16 ../getText.log:36
-#: ../getText.log:59 ../getText.log:79 ../getText.log:98 ../getText.log:139
-#: ../getText.log:158 ../getText.log:180 ../getText.log:200 ../getText.log:219
-#: ../getText.log:247 ../getText.log:267 ../getText.log:287 ../getText.log:313
-#: ../getText.log:333 ../getText.log:361 ../getText.log:383 ../getText.log:426
-#: ../getText.log:446 ../getText.log:466 ../getText.log:486 ../getText.log:513
-#: ../getText.log:535 ../getText.log:555 ../getText.log:575 ../getText.log:597
-#: ../getText.log:613 ../getText.log:628 ../getText.log:643 ../getText.log:674
-#: ../getText.log:689 ../getText.log:704 ../getText.log:714 ../getText.log:788
-#: ../getText.log:804 ../getText.log:820
-msgid "ENGLISH"
-msgstr "Englisch"
-
-#: gettext.log:6 gettext.log:12 gettext.log:18 gettext.log:21 gettext.log:24
-#: gettext.log:27 gettext.log:30 gettext.log:34 gettext.log:38 gettext.log:42
-#: gettext.log:46 gettext.log:50 gettext.log:54 gettext.log:58 gettext.log:62
-#: gettext.log:66 gettext.log:71 gettext.log:76 gettext.log:81 gettext.log:86
-#: gettext.log:91 gettext.log:96 gettext.log:101 gettext.log:106
-#: gettext.log:111 gettext.log:116 gettext.log:121 gettext.log:126
-#: gettext.log:130 gettext.log:135 gettext.log:140 gettext.log:145
-#: gettext.log:149 gettext.log:155 gettext.log:160 gettext.log:165
-#: gettext.log:170 gettext.log:175 gettext.log:181 gettext.log:190
-#: gettext.log:200 gettext.log:209 gettext.log:218 gettext.log:223
-#: gettext.log:229 gettext.log:236 gettext.log:242 gettext.log:248
-#: gettext.log:252 gettext.log:256 gettext.log:260 gettext.log:264
-#: gettext.log:267 gettext.log:270 gettext.log:273 gettext.log:276
-#: gettext.log:289 gettext.log:304 gettext.log:319 gettext.log:333
-#: gettext.log:354 gettext.log:495 gettext.log:636 gettext.log:770
-#: gettext.log:911 gettext.log:1034 gettext.log:1168 gettext.log:1172
-#: ../getText.log:5 ../getText.log:10 ../getText.log:15 ../getText.log:20
-#: ../getText.log:25 ../getText.log:30 ../getText.log:35 ../getText.log:66
-#: ../getText.log:84 ../getText.log:102 ../getText.log:120 ../getText.log:138
-#: ../getText.log:156 ../getText.log:174 ../getText.log:192 ../getText.log:210
-#: ../getText.log:228 ../getText.log:246 ../getText.log:264 ../getText.log:282
-#: ../getText.log:300 ../getText.log:318 ../getText.log:336 ../getText.log:354
-#: ../getText.log:372 ../getText.log:390 ../getText.log:408 ../getText.log:426
-#: ../getText.log:444 ../getText.log:462 ../getText.log:480 ../getText.log:498
-#: ../getText.log:516 ../getText.log:534 ../getText.log:552 ../getText.log:570
-#: ../getText.log:588 ../getText.log:606 ../getText.log:624 ../getText.log:642
-#: ../getText.log:660 ../getText.log:678 ../getText.log:696 ../getText.log:714
-#: ../getText.log:732 ../getText.log:744 ../getText.log:762 ../getText.log:780
-#: ../getText.log:798 ../getText.log:816 ../getText.log:834 ../getText.log:852
-#: ../getText.log:870 ../getText.log:888 ../getText.log:906 ../getText.log:924
-#: ../getText.log:942 ../getText.log:960 ../getText.log:981
-#: ../getText.log:1000 ../getText.log:1028 ../getText.log:1053
-#: ../getText.log:1074 ../getText.log:1095 ../getText.log:1122
-#: ../getText.log:1152 ../getText.log:1210 ../getText.log:1232
-#: ../getText.log:1250 ../getText.log:1269 ../getText.log:1288
-#: ../getText.log:1307 ../getText.log:1326 ../getText.log:1345
-#: ../getText.log:1364 ../getText.log:1384 ../getText.log:1409
-#: ../getText.log:1439 ../getText.log:1459 ../getText.log:1480
-#: ../getText.log:1500 ../getText.log:1535 ../getText.log:1574
-#: ../getText.log:1594 ../getText.log:1613 ../getText.log:1633
-#: ../getText.log:17 ../getText.log:37 ../getText.log:60 ../getText.log:80
-#: ../getText.log:99 ../getText.log:140 ../getText.log:159 ../getText.log:181
-#: ../getText.log:201 ../getText.log:220 ../getText.log:248 ../getText.log:268
-#: ../getText.log:288 ../getText.log:314 ../getText.log:334 ../getText.log:362
-#: ../getText.log:384 ../getText.log:427 ../getText.log:447 ../getText.log:467
-#: ../getText.log:487 ../getText.log:514 ../getText.log:536 ../getText.log:556
-#: ../getText.log:576 ../getText.log:598 ../getText.log:614 ../getText.log:629
-#: ../getText.log:644 ../getText.log:675 ../getText.log:690 ../getText.log:705
-#: ../getText.log:715 ../getText.log:789 ../getText.log:805 ../getText.log:821
-msgid "GERMAN"
-msgstr "Deutsch"
-
-#: gettext.log:31 gettext.log:35 gettext.log:39 gettext.log:43 gettext.log:47
-msgid "Percentage"
-msgstr "Anteilswert"
-
-#: gettext.log:51 gettext.log:55 gettext.log:59 gettext.log:63 gettext.log:68
-#: gettext.log:249 gettext.log:253 gettext.log:257 gettext.log:261
-#: ../getText.log:1251 ../getText.log:1270 ../getText.log:1289
-#: ../getText.log:1308 ../getText.log:1327 ../getText.log:1346
-#: ../getText.log:1365 ../getText.log:1385 ../getText.log:1410
-#: ../getText.log:1440 ../getText.log:1460 ../getText.log:1481
-#: ../getText.log:1501 ../getText.log:1536 ../getText.log:1575
-#: ../getText.log:1595 ../getText.log:1614 ../getText.log:1634
-#: ../getText.log:18 ../getText.log:38 ../getText.log:61 ../getText.log:81
-#: ../getText.log:100 ../getText.log:121 ../getText.log:141 ../getText.log:160
-#: ../getText.log:182 ../getText.log:202 ../getText.log:221 ../getText.log:249
-#: ../getText.log:269 ../getText.log:289 ../getText.log:315 ../getText.log:335
-#: ../getText.log:363 ../getText.log:385 ../getText.log:428 ../getText.log:448
-#: ../getText.log:468 ../getText.log:488 ../getText.log:515 ../getText.log:537
-#: ../getText.log:557 ../getText.log:577 ../getText.log:599 ../getText.log:615
-#: ../getText.log:630 ../getText.log:645 ../getText.log:661 ../getText.log:676
-#: ../getText.log:691 ../getText.log:706 ../getText.log:716 ../getText.log:790
-#: ../getText.log:806 ../getText.log:822
+#: getText.log:1 getText.log:27 getText.log:52 getText.log:77 getText.log:89
+#: getText.log:99 getText.log:109 getText.log:125 getText.log:139
+#: getText.log:153 getText.log:179 getText.log:204 getText.log:230
+#: getText.log:456 getText.log:468 getText.log:479 getText.log:495
+#: getText.log:524 getText.log:540 getText.log:561 getText.log:578
+#: getText.log:598 getText.log:614 getText.log:643 getText.log:672
+#: getText.log:701 getText.log:730 getText.log:759 getText.log:788
+#: getText.log:817 getText.log:846 getText.log:875 getText.log:904
+#: getText.log:933 getText.log:962 getText.log:991 getText.log:1020
+#: getText.log:1049 getText.log:1078 getText.log:1107 getText.log:1122
+#: getText.log:1138 getText.log:1167 getText.log:1196 getText.log:1215
+#: getText.log:1235 getText.log:1259 getText.log:1279 getText.log:1299
+#: getText.log:1328 getText.log:1357 getText.log:1442 getText.log:1446
+#: getText.log:1450
 msgid "Font size"
 msgstr "Schriftgröße"
 
-#: gettext.log:67 gettext.log:72 gettext.log:77 gettext.log:82 gettext.log:87
-#: gettext.log:92 gettext.log:97 gettext.log:102 gettext.log:107
-#: gettext.log:112 gettext.log:117 gettext.log:122 gettext.log:131
-#: gettext.log:136 gettext.log:141 gettext.log:146 gettext.log:191
-#: gettext.log:230 gettext.log:277 gettext.log:290 gettext.log:305
-msgid "messages"
-msgstr ""
+#: getText.log:2 getText.log:28 getText.log:53 getText.log:154 getText.log:180
+#: getText.log:205 getText.log:231 getText.log:616 getText.log:645
+#: getText.log:674 getText.log:703 getText.log:732 getText.log:761
+#: getText.log:790 getText.log:819 getText.log:848 getText.log:877
+#: getText.log:906 getText.log:935 getText.log:964 getText.log:993
+#: getText.log:1022 getText.log:1051 getText.log:1080 getText.log:1140
+#: getText.log:1169 getText.log:1301 getText.log:1330
+msgid "Table view"
+msgstr "Tabellenansicht"
 
-#: gettext.log:73 gettext.log:78 gettext.log:83 gettext.log:88
-#: ../getText.log:45 ../getText.log:59 ../getText.log:77 ../getText.log:95
-#: ../getText.log:113 ../getText.log:131 ../getText.log:149 ../getText.log:167
-#: ../getText.log:185 ../getText.log:203 ../getText.log:221 ../getText.log:239
-#: ../getText.log:257 ../getText.log:275 ../getText.log:293 ../getText.log:311
-#: ../getText.log:329 ../getText.log:347 ../getText.log:365 ../getText.log:383
-#: ../getText.log:401 ../getText.log:419 ../getText.log:437 ../getText.log:455
-#: ../getText.log:473 ../getText.log:491 ../getText.log:509 ../getText.log:527
-#: ../getText.log:545 ../getText.log:563 ../getText.log:581 ../getText.log:599
-#: ../getText.log:617 ../getText.log:635 ../getText.log:653 ../getText.log:671
-#: ../getText.log:689 ../getText.log:707 ../getText.log:725 ../getText.log:755
-#: ../getText.log:773 ../getText.log:791 ../getText.log:809 ../getText.log:827
-#: ../getText.log:845 ../getText.log:863 ../getText.log:881 ../getText.log:899
-#: ../getText.log:917 ../getText.log:935 ../getText.log:953 ../getText.log:974
-#: ../getText.log:993 ../getText.log:1021 ../getText.log:1046
-#: ../getText.log:1067 ../getText.log:1088 ../getText.log:1115
-#: ../getText.log:1145 ../getText.log:1203 ../getText.log:1243
-#: ../getText.log:1262 ../getText.log:1281 ../getText.log:1300
-#: ../getText.log:1319 ../getText.log:1338 ../getText.log:1357
-#: ../getText.log:1377 ../getText.log:1402 ../getText.log:1432
-#: ../getText.log:1452 ../getText.log:1473 ../getText.log:1493
-#: ../getText.log:1528 ../getText.log:1567 ../getText.log:1587
-#: ../getText.log:1606 ../getText.log:1626 ../getText.log:10 ../getText.log:30
-#: ../getText.log:53 ../getText.log:73 ../getText.log:92 ../getText.log:133
-#: ../getText.log:152 ../getText.log:174 ../getText.log:194 ../getText.log:213
-#: ../getText.log:241 ../getText.log:261 ../getText.log:281 ../getText.log:307
-#: ../getText.log:327 ../getText.log:355 ../getText.log:377 ../getText.log:420
-#: ../getText.log:440 ../getText.log:460 ../getText.log:480 ../getText.log:507
-#: ../getText.log:529 ../getText.log:549 ../getText.log:569 ../getText.log:591
-#: ../getText.log:605 ../getText.log:620 ../getText.log:651 ../getText.log:666
-#: ../getText.log:681 ../getText.log:696 ../getText.log:721 ../getText.log:780
-#: ../getText.log:796 ../getText.log:812
-msgid "Intensity"
-msgstr "Intensität"
+#: getText.log:3 getText.log:29 getText.log:54 getText.log:155 getText.log:181
+#: getText.log:206 getText.log:232 getText.log:617 getText.log:646
+#: getText.log:675 getText.log:704 getText.log:733 getText.log:762
+#: getText.log:791 getText.log:820 getText.log:849 getText.log:878
+#: getText.log:907 getText.log:936 getText.log:965 getText.log:994
+#: getText.log:1023 getText.log:1052 getText.log:1081 getText.log:1141
+#: getText.log:1170 getText.log:1302 getText.log:1331
+msgid "Absolute frequencies"
+msgstr "Absolute Häufigkeiten"
 
-#: gettext.log:93 gettext.log:98 gettext.log:103 gettext.log:108
-#: gettext.log:113 gettext.log:118
-msgid "Confidence level (%)"
-msgstr "Konfidenzniveau (%)"
+#: getText.log:4 getText.log:30 getText.log:55 getText.log:156 getText.log:182
+#: getText.log:207 getText.log:233 getText.log:618 getText.log:647
+#: getText.log:676 getText.log:705 getText.log:734 getText.log:763
+#: getText.log:792 getText.log:821 getText.log:850 getText.log:879
+#: getText.log:908 getText.log:937 getText.log:966 getText.log:995
+#: getText.log:1024 getText.log:1053 getText.log:1082 getText.log:1142
+#: getText.log:1171 getText.log:1303 getText.log:1332
+msgid "Relative frequencies"
+msgstr "Relative Häufigkeiten"
 
-#: gettext.log:123 gettext.log:127 gettext.log:132 gettext.log:137
-#: gettext.log:142 gettext.log:150 gettext.log:178 gettext.log:187
-#: gettext.log:197 gettext.log:206 gettext.log:215
-msgid "Significance level (%)"
-msgstr "Signifikanzniveau (%)"
+#: getText.log:5 getText.log:31 getText.log:56 getText.log:157 getText.log:183
+#: getText.log:208 getText.log:234 getText.log:619 getText.log:648
+#: getText.log:677 getText.log:706 getText.log:735 getText.log:764
+#: getText.log:793 getText.log:822 getText.log:851 getText.log:880
+#: getText.log:909 getText.log:938 getText.log:967 getText.log:996
+#: getText.log:1025 getText.log:1054 getText.log:1083 getText.log:1143
+#: getText.log:1172 getText.log:1304 getText.log:1333
+msgid "Rowwise frequencies"
+msgstr "Zeilen Häufigkeiten"
 
-#: gettext.log:151 gettext.log:156 gettext.log:161 gettext.log:166
-#: gettext.log:171 ../getText.log:16 ../getText.log:21 ../getText.log:26
-#: ../getText.log:31 ../getText.log:606 ../getText.log:621 ../getText.log:636
-#: ../getText.log:652 ../getText.log:667 ../getText.log:682 ../getText.log:697
-#: ../getText.log:722 ../getText.log:781 ../getText.log:797 ../getText.log:813
-msgid "&mu;"
-msgstr "&mu;"
+#: getText.log:6 getText.log:32 getText.log:57 getText.log:158 getText.log:184
+#: getText.log:209 getText.log:235 getText.log:620 getText.log:649
+#: getText.log:678 getText.log:707 getText.log:736 getText.log:765
+#: getText.log:794 getText.log:823 getText.log:852 getText.log:881
+#: getText.log:910 getText.log:939 getText.log:968 getText.log:997
+#: getText.log:1026 getText.log:1055 getText.log:1084 getText.log:1144
+#: getText.log:1173 getText.log:1305 getText.log:1334
+msgid "Columnwise frequencies"
+msgstr "Spalten Häufigkeiten"
 
-#: gettext.log:152 gettext.log:157 gettext.log:162 gettext.log:167
-#: gettext.log:172 ../getText.log:17 ../getText.log:22 ../getText.log:27
-#: ../getText.log:32 ../getText.log:607 ../getText.log:622 ../getText.log:637
-#: ../getText.log:653 ../getText.log:668 ../getText.log:683 ../getText.log:698
-#: ../getText.log:723 ../getText.log:782 ../getText.log:798 ../getText.log:814
-msgid "&sigma;"
-msgstr "&sigma;"
+#: getText.log:7 getText.log:33 getText.log:58 getText.log:159 getText.log:185
+#: getText.log:210 getText.log:236 getText.log:621 getText.log:650
+#: getText.log:679 getText.log:708 getText.log:737 getText.log:766
+#: getText.log:795 getText.log:824 getText.log:853 getText.log:882
+#: getText.log:911 getText.log:940 getText.log:969 getText.log:998
+#: getText.log:1027 getText.log:1056 getText.log:1085 getText.log:1145
+#: getText.log:1174 getText.log:1306 getText.log:1335
+msgid "Expected frequencies"
+msgstr "Erwartete Häufigkeiten"
 
-#: gettext.log:176 gettext.log:182 gettext.log:192 gettext.log:201
-#: gettext.log:210
-msgid "Choose alternative"
-msgstr "Alternativhypothese"
+#: getText.log:8 getText.log:34 getText.log:59 getText.log:160 getText.log:186
+#: getText.log:211 getText.log:237 getText.log:622 getText.log:651
+#: getText.log:680 getText.log:709 getText.log:738 getText.log:767
+#: getText.log:796 getText.log:825 getText.log:854 getText.log:883
+#: getText.log:912 getText.log:941 getText.log:970 getText.log:999
+#: getText.log:1028 getText.log:1057 getText.log:1086 getText.log:1146
+#: getText.log:1175 getText.log:1307 getText.log:1336
+msgid "Residuals"
+msgstr "Residuen"
 
-#: gettext.log:177 gettext.log:186 gettext.log:196 gettext.log:205
-#: gettext.log:214
-msgid "Hypothetical parameter"
-msgstr "Hypothetischer Parameter"
+#: getText.log:9 getText.log:35 getText.log:60 getText.log:161 getText.log:187
+#: getText.log:212 getText.log:238 getText.log:623 getText.log:652
+#: getText.log:681 getText.log:710 getText.log:739 getText.log:768
+#: getText.log:797 getText.log:826 getText.log:855 getText.log:884
+#: getText.log:913 getText.log:942 getText.log:971 getText.log:1000
+#: getText.log:1029 getText.log:1058 getText.log:1087 getText.log:1147
+#: getText.log:1176 getText.log:1308 getText.log:1337
+msgid "Studentized residuals"
+msgstr "Student`sche Residuen"
 
-#: gettext.log:183 gettext.log:193 gettext.log:202 gettext.log:211
-msgid "Two sided"
-msgstr "Zweiseitig"
+#: getText.log:10 getText.log:36 getText.log:61 getText.log:162 getText.log:188
+#: getText.log:213 getText.log:239 getText.log:624 getText.log:653
+#: getText.log:682 getText.log:711 getText.log:740 getText.log:769
+#: getText.log:798 getText.log:827 getText.log:856 getText.log:885
+#: getText.log:914 getText.log:943 getText.log:972 getText.log:1001
+#: getText.log:1030 getText.log:1059 getText.log:1088 getText.log:1148
+#: getText.log:1177 getText.log:1309 getText.log:1338
+msgid "Squared residuals"
+msgstr "Quadrierte Residuen"
 
-#: gettext.log:184 gettext.log:194 gettext.log:203 gettext.log:212
-msgid "Less"
-msgstr "Kleiner"
+#: getText.log:11 getText.log:37 getText.log:62 getText.log:163 getText.log:189
+#: getText.log:214 getText.log:240 getText.log:625 getText.log:654
+#: getText.log:683 getText.log:712 getText.log:741 getText.log:770
+#: getText.log:799 getText.log:828 getText.log:857 getText.log:886
+#: getText.log:915 getText.log:944 getText.log:973 getText.log:1002
+#: getText.log:1031 getText.log:1060 getText.log:1089 getText.log:1149
+#: getText.log:1178 getText.log:1310 getText.log:1339
+msgid "Coefficients"
+msgstr "Koeffizienten"
 
-#: gettext.log:185 gettext.log:195 gettext.log:204 gettext.log:213
-msgid "Greater"
-msgstr "Größer"
+#: getText.log:12 getText.log:38 getText.log:63 getText.log:164 getText.log:190
+#: getText.log:215 getText.log:241
+msgid "Chi square based"
+msgstr "Chi Quadrat basierend"
 
-#: gettext.log:219 gettext.log:226 gettext.log:233 gettext.log:239
-#: gettext.log:245 ../getText.log:1 ../getText.log:6 ../getText.log:11
-#: ../getText.log:40 ../getText.log:44 ../getText.log:54 ../getText.log:58
-#: ../getText.log:72 ../getText.log:76 ../getText.log:90 ../getText.log:94
-#: ../getText.log:108 ../getText.log:112 ../getText.log:126 ../getText.log:130
-#: ../getText.log:144 ../getText.log:148 ../getText.log:162 ../getText.log:166
-#: ../getText.log:180 ../getText.log:184 ../getText.log:198 ../getText.log:202
-#: ../getText.log:216 ../getText.log:220 ../getText.log:234 ../getText.log:238
-#: ../getText.log:252 ../getText.log:256 ../getText.log:270 ../getText.log:274
-#: ../getText.log:288 ../getText.log:292 ../getText.log:306 ../getText.log:310
-#: ../getText.log:324 ../getText.log:328 ../getText.log:342 ../getText.log:346
-#: ../getText.log:360 ../getText.log:364 ../getText.log:378 ../getText.log:382
-#: ../getText.log:396 ../getText.log:400 ../getText.log:414 ../getText.log:418
-#: ../getText.log:432 ../getText.log:436 ../getText.log:450 ../getText.log:454
-#: ../getText.log:468 ../getText.log:472 ../getText.log:486 ../getText.log:490
-#: ../getText.log:504 ../getText.log:508 ../getText.log:522 ../getText.log:526
-#: ../getText.log:540 ../getText.log:544 ../getText.log:558 ../getText.log:562
-#: ../getText.log:576 ../getText.log:580 ../getText.log:594 ../getText.log:598
-#: ../getText.log:612 ../getText.log:616 ../getText.log:630 ../getText.log:634
-#: ../getText.log:648 ../getText.log:652 ../getText.log:666 ../getText.log:670
-#: ../getText.log:684 ../getText.log:688 ../getText.log:702 ../getText.log:706
-#: ../getText.log:720 ../getText.log:724 ../getText.log:750 ../getText.log:754
-#: ../getText.log:768 ../getText.log:772 ../getText.log:786 ../getText.log:790
-#: ../getText.log:804 ../getText.log:808 ../getText.log:822 ../getText.log:826
-#: ../getText.log:840 ../getText.log:844 ../getText.log:858 ../getText.log:862
-#: ../getText.log:876 ../getText.log:880 ../getText.log:894 ../getText.log:898
-#: ../getText.log:912 ../getText.log:916 ../getText.log:930 ../getText.log:934
-#: ../getText.log:948 ../getText.log:952 ../getText.log:969 ../getText.log:973
-#: ../getText.log:988 ../getText.log:992 ../getText.log:1016
-#: ../getText.log:1020 ../getText.log:1041 ../getText.log:1045
-#: ../getText.log:1062 ../getText.log:1066 ../getText.log:1083
-#: ../getText.log:1087 ../getText.log:1110 ../getText.log:1114
-#: ../getText.log:1140 ../getText.log:1144 ../getText.log:1198
-#: ../getText.log:1202 ../getText.log:1226 ../getText.log:1233
-#: ../getText.log:1238 ../getText.log:1242 ../getText.log:1257
-#: ../getText.log:1261 ../getText.log:1276 ../getText.log:1280
-#: ../getText.log:1295 ../getText.log:1299 ../getText.log:1314
-#: ../getText.log:1318 ../getText.log:1333 ../getText.log:1337
-#: ../getText.log:1352 ../getText.log:1356 ../getText.log:1372
-#: ../getText.log:1376 ../getText.log:1397 ../getText.log:1401
-#: ../getText.log:1427 ../getText.log:1431 ../getText.log:1447
-#: ../getText.log:1451 ../getText.log:1468 ../getText.log:1472
-#: ../getText.log:1488 ../getText.log:1492 ../getText.log:1523
-#: ../getText.log:1527 ../getText.log:1562 ../getText.log:1566
-#: ../getText.log:1582 ../getText.log:1586 ../getText.log:1601
-#: ../getText.log:1605 ../getText.log:1621 ../getText.log:1625
-#: ../getText.log:5 ../getText.log:9 ../getText.log:25 ../getText.log:29
-#: ../getText.log:48 ../getText.log:52 ../getText.log:68 ../getText.log:87
-#: ../getText.log:91 ../getText.log:128 ../getText.log:132 ../getText.log:147
-#: ../getText.log:151 ../getText.log:169 ../getText.log:173 ../getText.log:189
-#: ../getText.log:193 ../getText.log:208 ../getText.log:212 ../getText.log:236
-#: ../getText.log:240 ../getText.log:260 ../getText.log:276 ../getText.log:280
-#: ../getText.log:302 ../getText.log:322 ../getText.log:326 ../getText.log:350
-#: ../getText.log:354 ../getText.log:372 ../getText.log:376 ../getText.log:415
-#: ../getText.log:419 ../getText.log:435 ../getText.log:439 ../getText.log:455
-#: ../getText.log:459 ../getText.log:475 ../getText.log:479 ../getText.log:502
-#: ../getText.log:506 ../getText.log:524 ../getText.log:528 ../getText.log:548
-#: ../getText.log:564 ../getText.log:568 ../getText.log:586 ../getText.log:590
-msgid "Number of draws"
-msgstr "Anzahl der Ziehungen"
+#: getText.log:13 getText.log:39 getText.log:64 getText.log:165 getText.log:191
+#: getText.log:216 getText.log:242 getText.log:630 getText.log:659
+#: getText.log:688 getText.log:717 getText.log:746 getText.log:775
+#: getText.log:804 getText.log:833 getText.log:862 getText.log:891
+#: getText.log:920 getText.log:949 getText.log:978 getText.log:1007
+#: getText.log:1036 getText.log:1065 getText.log:1094 getText.log:1154
+#: getText.log:1183 getText.log:1315 getText.log:1344
+msgid "Goodman & Kruskals Lambda"
+msgstr "Goodman & Kruskals Lambda"
 
-#: gettext.log:220 ../getText.log:2 ../getText.log:7 ../getText.log:12
-#: ../getText.log:41 ../getText.log:55 ../getText.log:73 ../getText.log:91
-#: ../getText.log:109 ../getText.log:127 ../getText.log:145 ../getText.log:163
-#: ../getText.log:181 ../getText.log:199 ../getText.log:217 ../getText.log:235
-#: ../getText.log:253 ../getText.log:271 ../getText.log:289 ../getText.log:307
-#: ../getText.log:325 ../getText.log:343 ../getText.log:361 ../getText.log:379
-#: ../getText.log:397 ../getText.log:415 ../getText.log:433 ../getText.log:451
-#: ../getText.log:469 ../getText.log:487 ../getText.log:505 ../getText.log:523
-#: ../getText.log:541 ../getText.log:559 ../getText.log:577 ../getText.log:595
-#: ../getText.log:613 ../getText.log:631 ../getText.log:649 ../getText.log:667
-#: ../getText.log:685 ../getText.log:703 ../getText.log:721 ../getText.log:751
-#: ../getText.log:769 ../getText.log:787 ../getText.log:805 ../getText.log:823
-#: ../getText.log:841 ../getText.log:859 ../getText.log:877 ../getText.log:895
-#: ../getText.log:913 ../getText.log:931 ../getText.log:949 ../getText.log:970
-#: ../getText.log:989 ../getText.log:1017 ../getText.log:1042
-#: ../getText.log:1063 ../getText.log:1084 ../getText.log:1111
-#: ../getText.log:1141 ../getText.log:1199 ../getText.log:1239
-#: ../getText.log:1258 ../getText.log:1277 ../getText.log:1296
-#: ../getText.log:1315 ../getText.log:1334 ../getText.log:1353
-#: ../getText.log:1373 ../getText.log:1398 ../getText.log:1428
-#: ../getText.log:1448 ../getText.log:1469 ../getText.log:1489
-#: ../getText.log:1524 ../getText.log:1563 ../getText.log:1583
-#: ../getText.log:1602 ../getText.log:1622 ../getText.log:6 ../getText.log:26
-#: ../getText.log:49 ../getText.log:69 ../getText.log:88 ../getText.log:129
-#: ../getText.log:148 ../getText.log:170 ../getText.log:190 ../getText.log:209
-#: ../getText.log:237 ../getText.log:257 ../getText.log:277 ../getText.log:303
-#: ../getText.log:323 ../getText.log:351 ../getText.log:373 ../getText.log:416
-#: ../getText.log:436 ../getText.log:456 ../getText.log:476 ../getText.log:503
-#: ../getText.log:525 ../getText.log:545 ../getText.log:565 ../getText.log:587
-msgid "Probability of success per draw"
-msgstr "Erfolgswahrscheinlichkeit pro Ziehung"
+#: getText.log:14 getText.log:40 getText.log:65 getText.log:166 getText.log:192
+#: getText.log:217 getText.log:243 getText.log:631 getText.log:660
+#: getText.log:689 getText.log:718 getText.log:747 getText.log:776
+#: getText.log:805 getText.log:834 getText.log:863 getText.log:892
+#: getText.log:921 getText.log:950 getText.log:979 getText.log:1008
+#: getText.log:1037 getText.log:1066 getText.log:1095 getText.log:1155
+#: getText.log:1184 getText.log:1316 getText.log:1345
+msgid "Goodman & Kruskals Tau"
+msgstr "Goodman & Kruskals Tau"
 
-#: gettext.log:224 gettext.log:231 gettext.log:237 gettext.log:243
-#: ../getText.log:42 ../getText.log:56 ../getText.log:74 ../getText.log:92
-#: ../getText.log:110 ../getText.log:128 ../getText.log:146 ../getText.log:164
-#: ../getText.log:182 ../getText.log:200 ../getText.log:218 ../getText.log:236
-#: ../getText.log:254 ../getText.log:272 ../getText.log:290 ../getText.log:308
-#: ../getText.log:326 ../getText.log:344 ../getText.log:362 ../getText.log:380
-#: ../getText.log:398 ../getText.log:416 ../getText.log:434 ../getText.log:452
-#: ../getText.log:470 ../getText.log:488 ../getText.log:506 ../getText.log:524
-#: ../getText.log:542 ../getText.log:560 ../getText.log:578 ../getText.log:596
-#: ../getText.log:614 ../getText.log:632 ../getText.log:650 ../getText.log:668
-#: ../getText.log:686 ../getText.log:704 ../getText.log:722 ../getText.log:752
-#: ../getText.log:770 ../getText.log:788 ../getText.log:806 ../getText.log:824
-#: ../getText.log:842 ../getText.log:860 ../getText.log:878 ../getText.log:896
-#: ../getText.log:914 ../getText.log:932 ../getText.log:950 ../getText.log:971
-#: ../getText.log:990 ../getText.log:1018 ../getText.log:1043
-#: ../getText.log:1064 ../getText.log:1085 ../getText.log:1112
-#: ../getText.log:1142 ../getText.log:1200 ../getText.log:1240
-#: ../getText.log:1259 ../getText.log:1278 ../getText.log:1297
-#: ../getText.log:1316 ../getText.log:1335 ../getText.log:1354
-#: ../getText.log:1374 ../getText.log:1399 ../getText.log:1429
-#: ../getText.log:1449 ../getText.log:1470 ../getText.log:1490
-#: ../getText.log:1525 ../getText.log:1564 ../getText.log:1584
-#: ../getText.log:1603 ../getText.log:1623 ../getText.log:7 ../getText.log:27
-#: ../getText.log:50 ../getText.log:70 ../getText.log:89 ../getText.log:130
-#: ../getText.log:149 ../getText.log:171 ../getText.log:191 ../getText.log:210
-#: ../getText.log:238 ../getText.log:258 ../getText.log:278 ../getText.log:304
-#: ../getText.log:324 ../getText.log:352 ../getText.log:374 ../getText.log:417
-#: ../getText.log:437 ../getText.log:457 ../getText.log:477 ../getText.log:504
-#: ../getText.log:526 ../getText.log:546 ../getText.log:566 ../getText.log:588
-msgid "Population size"
-msgstr "Umfang der Grundgesamtheit"
+#: getText.log:15 getText.log:41 getText.log:66 getText.log:167 getText.log:193
+#: getText.log:218 getText.log:244 getText.log:632 getText.log:661
+#: getText.log:690 getText.log:719 getText.log:748 getText.log:777
+#: getText.log:806 getText.log:835 getText.log:864 getText.log:893
+#: getText.log:922 getText.log:951 getText.log:980 getText.log:1009
+#: getText.log:1038 getText.log:1067 getText.log:1096 getText.log:1156
+#: getText.log:1185 getText.log:1317 getText.log:1346
+msgid "Uncertainty"
+msgstr "Unsicherheit"
 
-#: gettext.log:225 gettext.log:232 gettext.log:238 gettext.log:244
-#: ../getText.log:43 ../getText.log:57 ../getText.log:75 ../getText.log:93
-#: ../getText.log:111 ../getText.log:129 ../getText.log:147 ../getText.log:165
-#: ../getText.log:183 ../getText.log:201 ../getText.log:219 ../getText.log:237
-#: ../getText.log:255 ../getText.log:273 ../getText.log:291 ../getText.log:309
-#: ../getText.log:327 ../getText.log:345 ../getText.log:363 ../getText.log:381
-#: ../getText.log:399 ../getText.log:417 ../getText.log:435 ../getText.log:453
-#: ../getText.log:471 ../getText.log:489 ../getText.log:507 ../getText.log:525
-#: ../getText.log:543 ../getText.log:561 ../getText.log:579 ../getText.log:597
-#: ../getText.log:615 ../getText.log:633 ../getText.log:651 ../getText.log:669
-#: ../getText.log:687 ../getText.log:705 ../getText.log:723 ../getText.log:753
-#: ../getText.log:771 ../getText.log:789 ../getText.log:807 ../getText.log:825
-#: ../getText.log:843 ../getText.log:861 ../getText.log:879 ../getText.log:897
-#: ../getText.log:915 ../getText.log:933 ../getText.log:951 ../getText.log:972
-#: ../getText.log:991 ../getText.log:1019 ../getText.log:1044
-#: ../getText.log:1065 ../getText.log:1086 ../getText.log:1113
-#: ../getText.log:1143 ../getText.log:1201 ../getText.log:1241
-#: ../getText.log:1260 ../getText.log:1279 ../getText.log:1298
-#: ../getText.log:1317 ../getText.log:1336 ../getText.log:1355
-#: ../getText.log:1375 ../getText.log:1400 ../getText.log:1430
-#: ../getText.log:1450 ../getText.log:1471 ../getText.log:1491
-#: ../getText.log:1526 ../getText.log:1565 ../getText.log:1585
-#: ../getText.log:1604 ../getText.log:1624 ../getText.log:8 ../getText.log:28
-#: ../getText.log:51 ../getText.log:71 ../getText.log:90 ../getText.log:131
-#: ../getText.log:150 ../getText.log:172 ../getText.log:192 ../getText.log:211
-#: ../getText.log:239 ../getText.log:259 ../getText.log:279 ../getText.log:305
-#: ../getText.log:325 ../getText.log:353 ../getText.log:375 ../getText.log:418
-#: ../getText.log:438 ../getText.log:458 ../getText.log:478 ../getText.log:505
-#: ../getText.log:527 ../getText.log:547 ../getText.log:567 ../getText.log:589
-msgid "Number of success states in the population"
-msgstr "Anzahl möglicher Erfolge in der Grundgesamtheit"
-
-#: gettext.log:278 gettext.log:291 gettext.log:306 gettext.log:320
-#: gettext.log:341 gettext.log:482 gettext.log:623 gettext.log:757
-#: gettext.log:898 gettext.log:1035
+#: getText.log:16 getText.log:42 getText.log:67 getText.log:168 getText.log:194
+#: getText.log:219 getText.log:245 getText.log:633 getText.log:662
+#: getText.log:691 getText.log:720 getText.log:749 getText.log:778
+#: getText.log:807 getText.log:836 getText.log:865 getText.log:894
+#: getText.log:923 getText.log:952 getText.log:981 getText.log:1010
+#: getText.log:1039 getText.log:1068 getText.log:1097 getText.log:1157
+#: getText.log:1186 getText.log:1318 getText.log:1347 getText.log:1567
+#: getText.log:1580 getText.log:1593
 msgid "Choose data set"
 msgstr "Datensatzauswahl"
 
-#: gettext.log:279 gettext.log:292 gettext.log:307 gettext.log:321
-#: gettext.log:334 gettext.log:475 gettext.log:616 gettext.log:891
-msgid "CREDIT"
-msgstr "Kredite"
-
-#: gettext.log:280 gettext.log:293 gettext.log:308 gettext.log:322
-#: gettext.log:335 gettext.log:476 gettext.log:617 gettext.log:892
-msgid "DECATHLON"
-msgstr "Zehnkampf"
-
-#: gettext.log:281 gettext.log:294 gettext.log:309 gettext.log:323
-#: gettext.log:336 gettext.log:372 gettext.log:392 gettext.log:412
-#: gettext.log:432 gettext.log:452 gettext.log:472 gettext.log:477
-#: gettext.log:513 gettext.log:533 gettext.log:553 gettext.log:573
-#: gettext.log:593 gettext.log:613 gettext.log:618 gettext.log:654
-#: gettext.log:674 gettext.log:694 gettext.log:714 gettext.log:734
-#: gettext.log:754 gettext.log:788 gettext.log:808 gettext.log:828
-#: gettext.log:848 gettext.log:868 gettext.log:888 gettext.log:893
-#: gettext.log:929 gettext.log:949 gettext.log:969 gettext.log:989
-#: gettext.log:1009 gettext.log:1029 gettext.log:1063 gettext.log:1083
-#: gettext.log:1103 gettext.log:1123 gettext.log:1143 gettext.log:1163
-msgid "TELEPHONE"
-msgstr "Telefonentwicklung"
-
-#: gettext.log:282 gettext.log:295 gettext.log:310 gettext.log:324
-#: gettext.log:337 gettext.log:478 gettext.log:619 gettext.log:894
-msgid "TITANIC"
-msgstr "Titanicpassagiere"
-
-#: gettext.log:283 gettext.log:296 gettext.log:311 gettext.log:325
-#: gettext.log:338 gettext.log:479 gettext.log:620 gettext.log:895
-msgid "USCRIME"
-msgstr "US Kriminalitätsraten"
-
-#: gettext.log:284 gettext.log:297 gettext.log:312 gettext.log:326
-#: gettext.log:339 gettext.log:480 gettext.log:621 gettext.log:896
+#: getText.log:17 getText.log:43 getText.log:68 getText.log:169 getText.log:195
+#: getText.log:220 getText.log:246 getText.log:634 getText.log:663
+#: getText.log:692 getText.log:721 getText.log:750 getText.log:779
+#: getText.log:808 getText.log:837 getText.log:866 getText.log:895
+#: getText.log:924 getText.log:953 getText.log:982 getText.log:1011
+#: getText.log:1040 getText.log:1069 getText.log:1098 getText.log:1158
+#: getText.log:1187 getText.log:1319 getText.log:1348 getText.log:1568
+#: getText.log:1581 getText.log:1594
 msgid "BOSTONHOUSING"
 msgstr "Bostoner Hauspreise"
 
-#: gettext.log:285 gettext.log:298 gettext.log:313 gettext.log:327
-#: gettext.log:340 gettext.log:481 gettext.log:622 gettext.log:897
-msgid "CARS"
-msgstr "Auto"
+#: getText.log:18 getText.log:44 getText.log:69 getText.log:170 getText.log:196
+#: getText.log:221 getText.log:247 getText.log:635 getText.log:664
+#: getText.log:693 getText.log:722 getText.log:751 getText.log:780
+#: getText.log:809 getText.log:838 getText.log:867 getText.log:896
+#: getText.log:925 getText.log:954 getText.log:983 getText.log:1012
+#: getText.log:1041 getText.log:1070 getText.log:1099 getText.log:1159
+#: getText.log:1188 getText.log:1320 getText.log:1349 getText.log:1570
+#: getText.log:1583 getText.log:1596
+msgid "CREDIT"
+msgstr "Kredite"
 
-#: gettext.log:286 gettext.log:299 gettext.log:314 gettext.log:328
-#: gettext.log:349 gettext.log:490 gettext.log:631 gettext.log:765
-#: gettext.log:906 gettext.log:1043
-msgid "Variable 1"
-msgstr "Variable 1"
+#: getText.log:19 getText.log:45 getText.log:70 getText.log:171 getText.log:197
+#: getText.log:222 getText.log:248 getText.log:636 getText.log:665
+#: getText.log:694 getText.log:723 getText.log:752 getText.log:781
+#: getText.log:810 getText.log:839 getText.log:868 getText.log:897
+#: getText.log:926 getText.log:955 getText.log:984 getText.log:1013
+#: getText.log:1042 getText.log:1071 getText.log:1100 getText.log:1160
+#: getText.log:1189 getText.log:1321 getText.log:1350 getText.log:1572
+#: getText.log:1585 getText.log:1598
+msgid "TITANIC"
+msgstr "Titanicpassagiere"
 
-#: gettext.log:300 gettext.log:315 gettext.log:329 gettext.log:350
-#: gettext.log:491 gettext.log:632 gettext.log:766 gettext.log:907
-#: gettext.log:1044
-msgid "Variable 2"
-msgstr "Variable 2"
+#: getText.log:20 getText.log:46 getText.log:71 getText.log:172 getText.log:198
+#: getText.log:223 getText.log:249 getText.log:637 getText.log:666
+#: getText.log:695 getText.log:724 getText.log:753 getText.log:782
+#: getText.log:811 getText.log:840 getText.log:869 getText.log:898
+#: getText.log:927 getText.log:956 getText.log:985 getText.log:1014
+#: getText.log:1043 getText.log:1072 getText.log:1101 getText.log:1161
+#: getText.log:1190 getText.log:1322 getText.log:1351 getText.log:1573
+#: getText.log:1586 getText.log:1599
+msgid "USCRIME"
+msgstr "US Kriminalitätsraten"
 
-#: gettext.log:301 gettext.log:316 gettext.log:330 gettext.log:351
-#: gettext.log:492 gettext.log:633 gettext.log:767 gettext.log:908
-#: gettext.log:1045
-msgid "Variable 3"
-msgstr "Variable 3"
+#: getText.log:21 getText.log:22 getText.log:47 getText.log:48 getText.log:72
+#: getText.log:73 getText.log:173 getText.log:174 getText.log:199
+#: getText.log:200 getText.log:224 getText.log:225 getText.log:250
+#: getText.log:251 getText.log:638 getText.log:639 getText.log:667
+#: getText.log:668 getText.log:696 getText.log:697 getText.log:725
+#: getText.log:726 getText.log:754 getText.log:755 getText.log:783
+#: getText.log:784 getText.log:812 getText.log:813 getText.log:841
+#: getText.log:842 getText.log:870 getText.log:871 getText.log:899
+#: getText.log:900 getText.log:928 getText.log:929 getText.log:957
+#: getText.log:958 getText.log:986 getText.log:987 getText.log:1015
+#: getText.log:1016 getText.log:1044 getText.log:1045 getText.log:1073
+#: getText.log:1074 getText.log:1102 getText.log:1103 getText.log:1162
+#: getText.log:1163 getText.log:1191 getText.log:1192 getText.log:1323
+#: getText.log:1324 getText.log:1352 getText.log:1353 getText.log:1574
+#: getText.log:1575 getText.log:1576 getText.log:1587 getText.log:1588
+#: getText.log:1589 getText.log:1600 getText.log:1601 getText.log:1602
+msgid "Choose variable"
+msgstr "Variablen Auswahl"
 
-#: gettext.log:1169
-msgid "My slider"
-msgstr "Mein Schieberegler"
+#: getText.log:23 getText.log:49 getText.log:74 getText.log:84 getText.log:96
+#: getText.log:106 getText.log:120 getText.log:136 getText.log:150
+#: getText.log:175 getText.log:201 getText.log:226 getText.log:252
+#: getText.log:463 getText.log:475 getText.log:490 getText.log:506
+#: getText.log:521 getText.log:537 getText.log:558 getText.log:575
+#: getText.log:595 getText.log:611 getText.log:640 getText.log:669
+#: getText.log:698 getText.log:727 getText.log:756 getText.log:785
+#: getText.log:814 getText.log:843 getText.log:872 getText.log:901
+#: getText.log:930 getText.log:959 getText.log:988 getText.log:1017
+#: getText.log:1046 getText.log:1075 getText.log:1104 getText.log:1119
+#: getText.log:1135 getText.log:1164 getText.log:1193 getText.log:1212
+#: getText.log:1232 getText.log:1256 getText.log:1276 getText.log:1296
+#: getText.log:1325 getText.log:1354 getText.log:1361 getText.log:1366
+#: getText.log:1371 getText.log:1376 getText.log:1380 getText.log:1384
+#: getText.log:1388 getText.log:1391 getText.log:1394 getText.log:1397
+#: getText.log:1400 getText.log:1403 getText.log:1406 getText.log:1409
+#: getText.log:1412 getText.log:1415 getText.log:1418 getText.log:1421
+#: getText.log:1424 getText.log:1427 getText.log:1430 getText.log:1433
+#: getText.log:1436 getText.log:1439 getText.log:1443 getText.log:1447
+#: getText.log:1451 getText.log:1457 getText.log:1463 getText.log:1469
+#: getText.log:1472 getText.log:1475 getText.log:1478 getText.log:1481
+#: getText.log:1485 getText.log:1489 getText.log:1493 getText.log:1498
+#: getText.log:1503 getText.log:1508 getText.log:1513 getText.log:1518
+#: getText.log:1523 getText.log:1528 getText.log:1532 getText.log:1536
+#: getText.log:1540 getText.log:1544 getText.log:1548 getText.log:1552
+#: getText.log:1556 getText.log:1560 getText.log:1564 getText.log:1577
+#: getText.log:1590 getText.log:1603 getText.log:1606 getText.log:1609
+#: getText.log:1612 getText.log:1618 getText.log:1623 getText.log:1628
+#: getText.log:1633 getText.log:1637 getText.log:1642 getText.log:1646
+#: getText.log:1650 getText.log:1654 getText.log:1658 getText.log:1662
+#: getText.log:1666 getText.log:1671 getText.log:1676 getText.log:1681
+#: getText.log:1684 getText.log:1687 getText.log:1690 getText.log:1695
+#: getText.log:1700 getText.log:1705 getText.log:1710 getText.log:1715
+#: getText.log:1720 getText.log:1725 getText.log:1730 getText.log:1735
+#: getText.log:1740 getText.log:1745 getText.log:1750 getText.log:1755
+#: getText.log:1760 getText.log:1765 getText.log:1770 getText.log:1775
+#: getText.log:1780 getText.log:1785 getText.log:1790 getText.log:1795
+#: getText.log:1800 getText.log:1805 getText.log:1810 getText.log:1815
+#: getText.log:1820 getText.log:1825 getText.log:1830 getText.log:1835
+msgid "Choose language"
+msgstr "Sprachauswahl"
 
-#: ../getText.log:36 ../getText.log:50 ../getText.log:68 ../getText.log:86
-#: ../getText.log:104 ../getText.log:122 ../getText.log:140 ../getText.log:158
-#: ../getText.log:176 ../getText.log:194 ../getText.log:212 ../getText.log:230
-#: ../getText.log:248 ../getText.log:266 ../getText.log:284 ../getText.log:302
-#: ../getText.log:320 ../getText.log:338 ../getText.log:356 ../getText.log:374
-#: ../getText.log:392 ../getText.log:410 ../getText.log:428 ../getText.log:446
-#: ../getText.log:464 ../getText.log:482 ../getText.log:500 ../getText.log:518
-#: ../getText.log:536 ../getText.log:554 ../getText.log:572 ../getText.log:590
-#: ../getText.log:608 ../getText.log:626 ../getText.log:644 ../getText.log:662
-#: ../getText.log:680 ../getText.log:698 ../getText.log:716 ../getText.log:734
-#: ../getText.log:746 ../getText.log:764 ../getText.log:782 ../getText.log:800
-#: ../getText.log:818 ../getText.log:836 ../getText.log:854 ../getText.log:872
-#: ../getText.log:890 ../getText.log:908 ../getText.log:926 ../getText.log:944
-#: ../getText.log:965 ../getText.log:984 ../getText.log:1012
-#: ../getText.log:1037 ../getText.log:1058 ../getText.log:1079
-#: ../getText.log:1106 ../getText.log:1136 ../getText.log:1194
-#: ../getText.log:1222 ../getText.log:1234 ../getText.log:1253
-#: ../getText.log:1272 ../getText.log:1291 ../getText.log:1310
-#: ../getText.log:1329 ../getText.log:1348 ../getText.log:1368
-#: ../getText.log:1393 ../getText.log:1423 ../getText.log:1443
-#: ../getText.log:1464 ../getText.log:1484 ../getText.log:1519
-#: ../getText.log:1558 ../getText.log:1578 ../getText.log:1597
-#: ../getText.log:1617 ../getText.log:1 ../getText.log:21 ../getText.log:44
-#: ../getText.log:64 ../getText.log:83 ../getText.log:124 ../getText.log:143
-#: ../getText.log:165 ../getText.log:185 ../getText.log:204 ../getText.log:232
-#: ../getText.log:252 ../getText.log:272 ../getText.log:298 ../getText.log:318
-#: ../getText.log:346 ../getText.log:368 ../getText.log:411 ../getText.log:431
-#: ../getText.log:451 ../getText.log:471 ../getText.log:498 ../getText.log:520
-#: ../getText.log:540 ../getText.log:560 ../getText.log:582 ../getText.log:602
-#: ../getText.log:617 ../getText.log:632 ../getText.log:648 ../getText.log:663
-#: ../getText.log:678 ../getText.log:693 ../getText.log:718 ../getText.log:777
-#: ../getText.log:793 ../getText.log:809
-msgid "Select a distribution type"
-msgstr "Wählen Sie eine Verteilung"
+#: getText.log:24 getText.log:50 getText.log:75 getText.log:85 getText.log:97
+#: getText.log:107 getText.log:121 getText.log:137 getText.log:151
+#: getText.log:176 getText.log:202 getText.log:227 getText.log:253
+#: getText.log:464 getText.log:476 getText.log:491 getText.log:507
+#: getText.log:522 getText.log:538 getText.log:559 getText.log:576
+#: getText.log:596 getText.log:612 getText.log:641 getText.log:670
+#: getText.log:699 getText.log:728 getText.log:757 getText.log:786
+#: getText.log:815 getText.log:844 getText.log:873 getText.log:902
+#: getText.log:931 getText.log:960 getText.log:989 getText.log:1018
+#: getText.log:1047 getText.log:1076 getText.log:1105 getText.log:1120
+#: getText.log:1136 getText.log:1165 getText.log:1194 getText.log:1213
+#: getText.log:1233 getText.log:1257 getText.log:1277 getText.log:1297
+#: getText.log:1326 getText.log:1355 getText.log:1362 getText.log:1367
+#: getText.log:1372 getText.log:1377 getText.log:1381 getText.log:1385
+#: getText.log:1389 getText.log:1392 getText.log:1395 getText.log:1398
+#: getText.log:1401 getText.log:1404 getText.log:1407 getText.log:1410
+#: getText.log:1413 getText.log:1416 getText.log:1419 getText.log:1422
+#: getText.log:1425 getText.log:1428 getText.log:1431 getText.log:1434
+#: getText.log:1437 getText.log:1440 getText.log:1444 getText.log:1448
+#: getText.log:1452 getText.log:1458 getText.log:1464 getText.log:1470
+#: getText.log:1473 getText.log:1476 getText.log:1479 getText.log:1482
+#: getText.log:1486 getText.log:1490 getText.log:1494 getText.log:1499
+#: getText.log:1504 getText.log:1509 getText.log:1514 getText.log:1519
+#: getText.log:1524 getText.log:1529 getText.log:1533 getText.log:1537
+#: getText.log:1541 getText.log:1545 getText.log:1549 getText.log:1553
+#: getText.log:1557 getText.log:1561 getText.log:1565 getText.log:1578
+#: getText.log:1591 getText.log:1604 getText.log:1607 getText.log:1610
+#: getText.log:1613 getText.log:1619 getText.log:1624 getText.log:1629
+#: getText.log:1634 getText.log:1638 getText.log:1643 getText.log:1659
+#: getText.log:1663 getText.log:1667 getText.log:1672 getText.log:1677
+#: getText.log:1682 getText.log:1685 getText.log:1688 getText.log:1691
+#: getText.log:1696 getText.log:1701 getText.log:1706 getText.log:1711
+#: getText.log:1716 getText.log:1721 getText.log:1726 getText.log:1731
+#: getText.log:1736 getText.log:1741 getText.log:1746 getText.log:1751
+#: getText.log:1756 getText.log:1761 getText.log:1766 getText.log:1771
+#: getText.log:1776 getText.log:1781 getText.log:1786 getText.log:1791
+#: getText.log:1796 getText.log:1801 getText.log:1806 getText.log:1811
+#: getText.log:1816 getText.log:1821 getText.log:1826 getText.log:1831
+#: getText.log:1836
+msgid "ENGLISH"
+msgstr "Englisch"
 
-#: ../getText.log:37 ../getText.log:51 ../getText.log:69 ../getText.log:87
-#: ../getText.log:105 ../getText.log:123 ../getText.log:141 ../getText.log:159
-#: ../getText.log:177 ../getText.log:195 ../getText.log:213 ../getText.log:231
-#: ../getText.log:249 ../getText.log:267 ../getText.log:285 ../getText.log:303
-#: ../getText.log:321 ../getText.log:339 ../getText.log:357 ../getText.log:375
-#: ../getText.log:393 ../getText.log:411 ../getText.log:429 ../getText.log:447
-#: ../getText.log:465 ../getText.log:483 ../getText.log:501 ../getText.log:519
-#: ../getText.log:537 ../getText.log:555 ../getText.log:573 ../getText.log:591
-#: ../getText.log:609 ../getText.log:627 ../getText.log:645 ../getText.log:663
-#: ../getText.log:681 ../getText.log:699 ../getText.log:717 ../getText.log:735
-#: ../getText.log:747 ../getText.log:765 ../getText.log:783 ../getText.log:801
-#: ../getText.log:819 ../getText.log:837 ../getText.log:855 ../getText.log:873
-#: ../getText.log:891 ../getText.log:909 ../getText.log:927 ../getText.log:945
-#: ../getText.log:966 ../getText.log:985 ../getText.log:1013
-#: ../getText.log:1038 ../getText.log:1059 ../getText.log:1080
-#: ../getText.log:1107 ../getText.log:1137 ../getText.log:1195
-#: ../getText.log:1223 ../getText.log:1235 ../getText.log:1254
-#: ../getText.log:1273 ../getText.log:1292 ../getText.log:1311
-#: ../getText.log:1330 ../getText.log:1349 ../getText.log:1369
-#: ../getText.log:1394 ../getText.log:1424 ../getText.log:1444
-#: ../getText.log:1465 ../getText.log:1485 ../getText.log:1520
-#: ../getText.log:1559 ../getText.log:1579 ../getText.log:1598
-#: ../getText.log:1618 ../getText.log:2 ../getText.log:22 ../getText.log:45
-#: ../getText.log:65 ../getText.log:84 ../getText.log:125 ../getText.log:144
-#: ../getText.log:166 ../getText.log:186 ../getText.log:205 ../getText.log:233
-#: ../getText.log:253 ../getText.log:273 ../getText.log:299 ../getText.log:319
-#: ../getText.log:347 ../getText.log:369 ../getText.log:412 ../getText.log:432
-#: ../getText.log:452 ../getText.log:472 ../getText.log:499 ../getText.log:521
-#: ../getText.log:541 ../getText.log:561 ../getText.log:583
-msgid "Binomial distribution"
-msgstr "Binomialverteilung"
+#: getText.log:25 getText.log:51 getText.log:76 getText.log:86 getText.log:98
+#: getText.log:108 getText.log:122 getText.log:138 getText.log:152
+#: getText.log:177 getText.log:203 getText.log:228 getText.log:254
+#: getText.log:465 getText.log:477 getText.log:492 getText.log:508
+#: getText.log:523 getText.log:539 getText.log:560 getText.log:577
+#: getText.log:597 getText.log:613 getText.log:642 getText.log:671
+#: getText.log:700 getText.log:729 getText.log:758 getText.log:787
+#: getText.log:816 getText.log:845 getText.log:874 getText.log:903
+#: getText.log:932 getText.log:961 getText.log:990 getText.log:1019
+#: getText.log:1048 getText.log:1077 getText.log:1106 getText.log:1121
+#: getText.log:1137 getText.log:1166 getText.log:1195 getText.log:1214
+#: getText.log:1234 getText.log:1258 getText.log:1278 getText.log:1298
+#: getText.log:1327 getText.log:1356 getText.log:1363 getText.log:1368
+#: getText.log:1373 getText.log:1378 getText.log:1382 getText.log:1386
+#: getText.log:1390 getText.log:1393 getText.log:1396 getText.log:1399
+#: getText.log:1402 getText.log:1405 getText.log:1408 getText.log:1411
+#: getText.log:1414 getText.log:1417 getText.log:1420 getText.log:1423
+#: getText.log:1426 getText.log:1429 getText.log:1432 getText.log:1435
+#: getText.log:1438 getText.log:1441 getText.log:1445 getText.log:1449
+#: getText.log:1453 getText.log:1459 getText.log:1465 getText.log:1471
+#: getText.log:1474 getText.log:1477 getText.log:1480 getText.log:1483
+#: getText.log:1487 getText.log:1491 getText.log:1495 getText.log:1500
+#: getText.log:1505 getText.log:1510 getText.log:1515 getText.log:1520
+#: getText.log:1525 getText.log:1530 getText.log:1534 getText.log:1538
+#: getText.log:1542 getText.log:1546 getText.log:1550 getText.log:1554
+#: getText.log:1558 getText.log:1562 getText.log:1566 getText.log:1579
+#: getText.log:1592 getText.log:1605 getText.log:1608 getText.log:1611
+#: getText.log:1614 getText.log:1620 getText.log:1625 getText.log:1630
+#: getText.log:1635 getText.log:1639 getText.log:1644 getText.log:1660
+#: getText.log:1664 getText.log:1668 getText.log:1673 getText.log:1678
+#: getText.log:1683 getText.log:1686 getText.log:1689 getText.log:1692
+#: getText.log:1697 getText.log:1702 getText.log:1707 getText.log:1712
+#: getText.log:1717 getText.log:1722 getText.log:1727 getText.log:1732
+#: getText.log:1737 getText.log:1742 getText.log:1747 getText.log:1752
+#: getText.log:1757 getText.log:1762 getText.log:1767 getText.log:1772
+#: getText.log:1777 getText.log:1782 getText.log:1787 getText.log:1792
+#: getText.log:1797 getText.log:1802 getText.log:1807 getText.log:1812
+#: getText.log:1817 getText.log:1822 getText.log:1827 getText.log:1832
+#: getText.log:1837
+msgid "GERMAN"
+msgstr "Deutsch"
 
-#: ../getText.log:38 ../getText.log:52 ../getText.log:70 ../getText.log:88
-#: ../getText.log:106 ../getText.log:124 ../getText.log:142 ../getText.log:160
-#: ../getText.log:178 ../getText.log:196 ../getText.log:214 ../getText.log:232
-#: ../getText.log:250 ../getText.log:268 ../getText.log:286 ../getText.log:304
-#: ../getText.log:322 ../getText.log:340 ../getText.log:358 ../getText.log:376
-#: ../getText.log:394 ../getText.log:412 ../getText.log:430 ../getText.log:448
-#: ../getText.log:466 ../getText.log:484 ../getText.log:502 ../getText.log:520
-#: ../getText.log:538 ../getText.log:556 ../getText.log:574 ../getText.log:592
-#: ../getText.log:610 ../getText.log:628 ../getText.log:646 ../getText.log:664
-#: ../getText.log:682 ../getText.log:700 ../getText.log:718 ../getText.log:736
-#: ../getText.log:748 ../getText.log:766 ../getText.log:784 ../getText.log:802
-#: ../getText.log:820 ../getText.log:838 ../getText.log:856 ../getText.log:874
-#: ../getText.log:892 ../getText.log:910 ../getText.log:928 ../getText.log:946
-#: ../getText.log:967 ../getText.log:986 ../getText.log:1014
-#: ../getText.log:1039 ../getText.log:1060 ../getText.log:1081
-#: ../getText.log:1108 ../getText.log:1138 ../getText.log:1196
-#: ../getText.log:1224 ../getText.log:1236 ../getText.log:1255
-#: ../getText.log:1274 ../getText.log:1293 ../getText.log:1312
-#: ../getText.log:1331 ../getText.log:1350 ../getText.log:1370
-#: ../getText.log:1395 ../getText.log:1425 ../getText.log:1445
-#: ../getText.log:1466 ../getText.log:1486 ../getText.log:1521
-#: ../getText.log:1560 ../getText.log:1580 ../getText.log:1599
-#: ../getText.log:1619 ../getText.log:3 ../getText.log:23 ../getText.log:46
-#: ../getText.log:66 ../getText.log:85 ../getText.log:126 ../getText.log:145
-#: ../getText.log:167 ../getText.log:187 ../getText.log:206 ../getText.log:234
-#: ../getText.log:254 ../getText.log:274 ../getText.log:300 ../getText.log:320
-#: ../getText.log:348 ../getText.log:370 ../getText.log:413 ../getText.log:433
-#: ../getText.log:453 ../getText.log:473 ../getText.log:500 ../getText.log:522
-#: ../getText.log:542 ../getText.log:562 ../getText.log:584
-msgid "Hypergeometric distribution"
-msgstr "Hypergeometrische Verteilung"
-
-#: ../getText.log:39 ../getText.log:53 ../getText.log:71 ../getText.log:89
-#: ../getText.log:107 ../getText.log:125 ../getText.log:143 ../getText.log:161
-#: ../getText.log:179 ../getText.log:197 ../getText.log:215 ../getText.log:233
-#: ../getText.log:251 ../getText.log:269 ../getText.log:287 ../getText.log:305
-#: ../getText.log:323 ../getText.log:341 ../getText.log:359 ../getText.log:377
-#: ../getText.log:395 ../getText.log:413 ../getText.log:431 ../getText.log:449
-#: ../getText.log:467 ../getText.log:485 ../getText.log:503 ../getText.log:521
-#: ../getText.log:539 ../getText.log:557 ../getText.log:575 ../getText.log:593
-#: ../getText.log:611 ../getText.log:629 ../getText.log:647 ../getText.log:665
-#: ../getText.log:683 ../getText.log:701 ../getText.log:719 ../getText.log:737
-#: ../getText.log:749 ../getText.log:767 ../getText.log:785 ../getText.log:803
-#: ../getText.log:821 ../getText.log:839 ../getText.log:857 ../getText.log:875
-#: ../getText.log:893 ../getText.log:911 ../getText.log:929 ../getText.log:947
-#: ../getText.log:968 ../getText.log:987 ../getText.log:1015
-#: ../getText.log:1040 ../getText.log:1061 ../getText.log:1082
-#: ../getText.log:1109 ../getText.log:1139 ../getText.log:1197
-#: ../getText.log:1225 ../getText.log:1237 ../getText.log:1256
-#: ../getText.log:1275 ../getText.log:1294 ../getText.log:1313
-#: ../getText.log:1332 ../getText.log:1351 ../getText.log:1371
-#: ../getText.log:1396 ../getText.log:1426 ../getText.log:1446
-#: ../getText.log:1467 ../getText.log:1487 ../getText.log:1522
-#: ../getText.log:1561 ../getText.log:1581 ../getText.log:1600
-#: ../getText.log:1620 ../getText.log:4 ../getText.log:24 ../getText.log:47
-#: ../getText.log:67 ../getText.log:86 ../getText.log:127 ../getText.log:146
-#: ../getText.log:168 ../getText.log:188 ../getText.log:207 ../getText.log:235
-#: ../getText.log:255 ../getText.log:275 ../getText.log:301 ../getText.log:321
-#: ../getText.log:349 ../getText.log:371 ../getText.log:414 ../getText.log:434
-#: ../getText.log:454 ../getText.log:474 ../getText.log:501 ../getText.log:523
-#: ../getText.log:543 ../getText.log:563 ../getText.log:585
-msgid "Poisson distribution"
-msgstr "Poisson Verteilung"
-
-#: ../getText.log:46 ../getText.log:60 ../getText.log:78 ../getText.log:96
-#: ../getText.log:114 ../getText.log:132 ../getText.log:150 ../getText.log:168
-#: ../getText.log:186 ../getText.log:204 ../getText.log:222 ../getText.log:240
-#: ../getText.log:258 ../getText.log:276 ../getText.log:294 ../getText.log:312
-#: ../getText.log:330 ../getText.log:348 ../getText.log:366 ../getText.log:384
-#: ../getText.log:402 ../getText.log:420 ../getText.log:438 ../getText.log:456
-#: ../getText.log:474 ../getText.log:492 ../getText.log:510 ../getText.log:528
-#: ../getText.log:546 ../getText.log:564 ../getText.log:582 ../getText.log:600
-#: ../getText.log:618 ../getText.log:636 ../getText.log:654 ../getText.log:672
-#: ../getText.log:690 ../getText.log:708 ../getText.log:726 ../getText.log:738
-#: ../getText.log:756 ../getText.log:774 ../getText.log:792 ../getText.log:810
-#: ../getText.log:828 ../getText.log:846 ../getText.log:864 ../getText.log:882
-#: ../getText.log:900 ../getText.log:918 ../getText.log:936 ../getText.log:954
-#: ../getText.log:975 ../getText.log:994 ../getText.log:1022
-#: ../getText.log:1047 ../getText.log:1068 ../getText.log:1089
-#: ../getText.log:1116 ../getText.log:1146 ../getText.log:1204
-#: ../getText.log:1227 ../getText.log:1244 ../getText.log:1263
-#: ../getText.log:1282 ../getText.log:1301 ../getText.log:1320
-#: ../getText.log:1339 ../getText.log:1358 ../getText.log:1378
-#: ../getText.log:1403 ../getText.log:1433 ../getText.log:1453
-#: ../getText.log:1474 ../getText.log:1494 ../getText.log:1529
-#: ../getText.log:1568 ../getText.log:1588 ../getText.log:1607
-#: ../getText.log:1627 ../getText.log:11 ../getText.log:31 ../getText.log:54
-#: ../getText.log:74 ../getText.log:93 ../getText.log:134 ../getText.log:153
-#: ../getText.log:175 ../getText.log:195 ../getText.log:214 ../getText.log:242
-#: ../getText.log:262 ../getText.log:282 ../getText.log:308 ../getText.log:328
-#: ../getText.log:356 ../getText.log:378 ../getText.log:421 ../getText.log:441
-#: ../getText.log:461 ../getText.log:481 ../getText.log:508 ../getText.log:530
-#: ../getText.log:550 ../getText.log:570 ../getText.log:592 ../getText.log:608
-#: ../getText.log:623 ../getText.log:638 ../getText.log:669 ../getText.log:684
-#: ../getText.log:699 ../getText.log:709 ../getText.log:783 ../getText.log:799
-#: ../getText.log:815
-msgid "Choose"
-msgstr "Wählen Sie"
-
-#: ../getText.log:47 ../getText.log:61 ../getText.log:79 ../getText.log:97
-#: ../getText.log:115 ../getText.log:133 ../getText.log:151 ../getText.log:169
-#: ../getText.log:187 ../getText.log:205 ../getText.log:223 ../getText.log:241
-#: ../getText.log:259 ../getText.log:277 ../getText.log:295 ../getText.log:313
-#: ../getText.log:331 ../getText.log:349 ../getText.log:367 ../getText.log:385
-#: ../getText.log:403 ../getText.log:421 ../getText.log:439 ../getText.log:457
-#: ../getText.log:475 ../getText.log:493 ../getText.log:511 ../getText.log:529
-#: ../getText.log:547 ../getText.log:565 ../getText.log:583 ../getText.log:601
-#: ../getText.log:619 ../getText.log:637 ../getText.log:655 ../getText.log:673
-#: ../getText.log:691 ../getText.log:709 ../getText.log:727 ../getText.log:739
-#: ../getText.log:757 ../getText.log:775 ../getText.log:793 ../getText.log:811
-#: ../getText.log:829 ../getText.log:847 ../getText.log:865 ../getText.log:883
-#: ../getText.log:901 ../getText.log:919 ../getText.log:937 ../getText.log:955
-#: ../getText.log:976 ../getText.log:995 ../getText.log:1023
-#: ../getText.log:1048 ../getText.log:1069 ../getText.log:1090
-#: ../getText.log:1117 ../getText.log:1147 ../getText.log:1205
-#: ../getText.log:1228 ../getText.log:1245 ../getText.log:1264
-#: ../getText.log:1283 ../getText.log:1302 ../getText.log:1321
-#: ../getText.log:1340 ../getText.log:1359 ../getText.log:1379
-#: ../getText.log:1404 ../getText.log:1434 ../getText.log:1454
-#: ../getText.log:1475 ../getText.log:1495 ../getText.log:1530
-#: ../getText.log:1569 ../getText.log:1589 ../getText.log:1608
-#: ../getText.log:1628 ../getText.log:12 ../getText.log:32 ../getText.log:55
-#: ../getText.log:75 ../getText.log:94 ../getText.log:135 ../getText.log:154
-#: ../getText.log:176 ../getText.log:196 ../getText.log:215 ../getText.log:243
-#: ../getText.log:263 ../getText.log:283 ../getText.log:309 ../getText.log:329
-#: ../getText.log:357 ../getText.log:379 ../getText.log:422 ../getText.log:442
-#: ../getText.log:462 ../getText.log:482 ../getText.log:509 ../getText.log:531
-#: ../getText.log:551 ../getText.log:571 ../getText.log:593 ../getText.log:609
-#: ../getText.log:624 ../getText.log:639 ../getText.log:670 ../getText.log:685
-#: ../getText.log:700 ../getText.log:710 ../getText.log:784 ../getText.log:800
-#: ../getText.log:816
-msgid "Probability mass function"
-msgstr "Wahrscheinlichkeitsfunktion"
-
-#: ../getText.log:48 ../getText.log:62 ../getText.log:80 ../getText.log:98
-#: ../getText.log:116 ../getText.log:134 ../getText.log:152 ../getText.log:170
-#: ../getText.log:188 ../getText.log:206 ../getText.log:224 ../getText.log:242
-#: ../getText.log:260 ../getText.log:278 ../getText.log:296 ../getText.log:314
-#: ../getText.log:332 ../getText.log:350 ../getText.log:368 ../getText.log:386
-#: ../getText.log:404 ../getText.log:422 ../getText.log:440 ../getText.log:458
-#: ../getText.log:476 ../getText.log:494 ../getText.log:512 ../getText.log:530
-#: ../getText.log:548 ../getText.log:566 ../getText.log:584 ../getText.log:602
-#: ../getText.log:620 ../getText.log:638 ../getText.log:656 ../getText.log:674
-#: ../getText.log:692 ../getText.log:710 ../getText.log:728 ../getText.log:740
-#: ../getText.log:758 ../getText.log:776 ../getText.log:794 ../getText.log:812
-#: ../getText.log:830 ../getText.log:848 ../getText.log:866 ../getText.log:884
-#: ../getText.log:902 ../getText.log:920 ../getText.log:938 ../getText.log:956
-#: ../getText.log:977 ../getText.log:996 ../getText.log:1024
-#: ../getText.log:1049 ../getText.log:1070 ../getText.log:1091
-#: ../getText.log:1118 ../getText.log:1148 ../getText.log:1206
-#: ../getText.log:1229 ../getText.log:1246 ../getText.log:1265
-#: ../getText.log:1284 ../getText.log:1303 ../getText.log:1322
-#: ../getText.log:1341 ../getText.log:1360 ../getText.log:1380
-#: ../getText.log:1405 ../getText.log:1435 ../getText.log:1455
-#: ../getText.log:1476 ../getText.log:1496 ../getText.log:1531
-#: ../getText.log:1570 ../getText.log:1590 ../getText.log:1609
-#: ../getText.log:1629 ../getText.log:13 ../getText.log:33 ../getText.log:56
-#: ../getText.log:76 ../getText.log:95 ../getText.log:136 ../getText.log:155
-#: ../getText.log:177 ../getText.log:197 ../getText.log:216 ../getText.log:244
-#: ../getText.log:264 ../getText.log:284 ../getText.log:310 ../getText.log:330
-#: ../getText.log:358 ../getText.log:380 ../getText.log:423 ../getText.log:443
-#: ../getText.log:463 ../getText.log:483 ../getText.log:510 ../getText.log:532
-#: ../getText.log:552 ../getText.log:572 ../getText.log:594 ../getText.log:610
-#: ../getText.log:625 ../getText.log:640 ../getText.log:671 ../getText.log:686
-#: ../getText.log:701 ../getText.log:711 ../getText.log:785 ../getText.log:801
-#: ../getText.log:817
-msgid "Cumulative distribution function"
-msgstr "Verteilungsfunktion"
-
-#: ../getText.log:49 ../getText.log:63 ../getText.log:81 ../getText.log:99
-#: ../getText.log:117 ../getText.log:135 ../getText.log:153 ../getText.log:171
-#: ../getText.log:189 ../getText.log:207 ../getText.log:225 ../getText.log:243
-#: ../getText.log:261 ../getText.log:279 ../getText.log:297 ../getText.log:315
-#: ../getText.log:333 ../getText.log:351 ../getText.log:369 ../getText.log:387
-#: ../getText.log:405 ../getText.log:423 ../getText.log:441 ../getText.log:459
-#: ../getText.log:477 ../getText.log:495 ../getText.log:513 ../getText.log:531
-#: ../getText.log:549 ../getText.log:567 ../getText.log:585 ../getText.log:603
-#: ../getText.log:621 ../getText.log:639 ../getText.log:657 ../getText.log:675
-#: ../getText.log:693 ../getText.log:711 ../getText.log:729 ../getText.log:741
-#: ../getText.log:759 ../getText.log:777 ../getText.log:795 ../getText.log:813
-#: ../getText.log:831 ../getText.log:849 ../getText.log:867 ../getText.log:885
-#: ../getText.log:903 ../getText.log:921 ../getText.log:939 ../getText.log:957
-#: ../getText.log:978 ../getText.log:997 ../getText.log:1025
-#: ../getText.log:1050 ../getText.log:1071 ../getText.log:1092
-#: ../getText.log:1119 ../getText.log:1149 ../getText.log:1207
-#: ../getText.log:1247 ../getText.log:1266 ../getText.log:1285
-#: ../getText.log:1304 ../getText.log:1323 ../getText.log:1342
-#: ../getText.log:1361 ../getText.log:1381 ../getText.log:1406
-#: ../getText.log:1436 ../getText.log:1456 ../getText.log:1477
-#: ../getText.log:1497 ../getText.log:1532 ../getText.log:1571
-#: ../getText.log:1591 ../getText.log:1610 ../getText.log:1630
-#: ../getText.log:14 ../getText.log:34 ../getText.log:57 ../getText.log:77
-#: ../getText.log:96 ../getText.log:137 ../getText.log:156 ../getText.log:178
-#: ../getText.log:198 ../getText.log:217 ../getText.log:245 ../getText.log:265
-#: ../getText.log:285 ../getText.log:311 ../getText.log:331 ../getText.log:359
-#: ../getText.log:381 ../getText.log:424 ../getText.log:444 ../getText.log:464
-#: ../getText.log:484 ../getText.log:511 ../getText.log:533 ../getText.log:553
-#: ../getText.log:573 ../getText.log:595 ../getText.log:611 ../getText.log:626
-#: ../getText.log:641 ../getText.log:672 ../getText.log:687 ../getText.log:702
-#: ../getText.log:712 ../getText.log:786 ../getText.log:802 ../getText.log:818
-msgid "Refit axes"
-msgstr "Achsen anpassen"
-
-#: ../getText.log:67 ../getText.log:85 ../getText.log:103 ../getText.log:121
-#: ../getText.log:139 ../getText.log:157 ../getText.log:175 ../getText.log:193
-#: ../getText.log:211 ../getText.log:229 ../getText.log:247 ../getText.log:265
-#: ../getText.log:283 ../getText.log:301 ../getText.log:319 ../getText.log:337
-#: ../getText.log:355 ../getText.log:373 ../getText.log:391 ../getText.log:409
-#: ../getText.log:427 ../getText.log:445 ../getText.log:463 ../getText.log:481
-#: ../getText.log:499 ../getText.log:517 ../getText.log:535 ../getText.log:553
-#: ../getText.log:571 ../getText.log:589 ../getText.log:607 ../getText.log:625
-#: ../getText.log:643 ../getText.log:661 ../getText.log:679 ../getText.log:697
-#: ../getText.log:715 ../getText.log:733 ../getText.log:745 ../getText.log:763
-#: ../getText.log:781 ../getText.log:799 ../getText.log:817 ../getText.log:835
-#: ../getText.log:853 ../getText.log:871 ../getText.log:889 ../getText.log:907
-#: ../getText.log:925 ../getText.log:943 ../getText.log:961 ../getText.log:982
-#: ../getText.log:1001 ../getText.log:1029 ../getText.log:1054
-#: ../getText.log:1075 ../getText.log:1096 ../getText.log:1123
-#: ../getText.log:1153 ../getText.log:1211 ../getText.log:1252
-#: ../getText.log:1271 ../getText.log:1290 ../getText.log:1309
-#: ../getText.log:1328 ../getText.log:1347 ../getText.log:1366
-#: ../getText.log:1386 ../getText.log:1411 ../getText.log:1441
-#: ../getText.log:1461 ../getText.log:1482 ../getText.log:1502
-#: ../getText.log:1537 ../getText.log:1576 ../getText.log:1596
-#: ../getText.log:1615 ../getText.log:1635 ../getText.log:19 ../getText.log:39
-#: ../getText.log:62 ../getText.log:82 ../getText.log:101 ../getText.log:122
-#: ../getText.log:142 ../getText.log:161 ../getText.log:183 ../getText.log:203
-#: ../getText.log:222 ../getText.log:250 ../getText.log:270 ../getText.log:290
-#: ../getText.log:316 ../getText.log:336 ../getText.log:364 ../getText.log:386
-#: ../getText.log:429 ../getText.log:449 ../getText.log:469 ../getText.log:489
-#: ../getText.log:516 ../getText.log:538 ../getText.log:558 ../getText.log:578
-#: ../getText.log:600 ../getText.log:616 ../getText.log:631 ../getText.log:646
-#: ../getText.log:662 ../getText.log:677 ../getText.log:692 ../getText.log:707
-#: ../getText.log:717 ../getText.log:791 ../getText.log:807 ../getText.log:823
+#: getText.log:26 getText.log:87 getText.log:123 getText.log:178
+#: getText.log:229 getText.log:466 getText.log:493 getText.log:525
+#: getText.log:541 getText.log:562 getText.log:579 getText.log:599
+#: getText.log:615 getText.log:644 getText.log:673 getText.log:702
+#: getText.log:731 getText.log:760 getText.log:789 getText.log:818
+#: getText.log:847 getText.log:876 getText.log:905 getText.log:934
+#: getText.log:963 getText.log:992 getText.log:1021 getText.log:1050
+#: getText.log:1079 getText.log:1108 getText.log:1123 getText.log:1139
+#: getText.log:1168 getText.log:1197 getText.log:1216 getText.log:1236
+#: getText.log:1260 getText.log:1280 getText.log:1300 getText.log:1329
+#: getText.log:1358
 msgid "Options"
 msgstr "Optionen"
 
-#: ../getText.log:962 ../getText.log:963 ../getText.log:964 ../getText.log:983
-#: ../getText.log:1002 ../getText.log:1003 ../getText.log:1005
-#: ../getText.log:1030 ../getText.log:1031 ../getText.log:1055
-#: ../getText.log:1076 ../getText.log:1077 ../getText.log:1097
-#: ../getText.log:1098 ../getText.log:1124 ../getText.log:1125
-#: ../getText.log:1126 ../getText.log:1127 ../getText.log:1128
-#: ../getText.log:1129 ../getText.log:1130 ../getText.log:1131
-#: ../getText.log:1132 ../getText.log:1133 ../getText.log:1134
-#: ../getText.log:1135 ../getText.log:1154 ../getText.log:1155
-#: ../getText.log:1156 ../getText.log:1157 ../getText.log:1158
-#: ../getText.log:1159 ../getText.log:1160 ../getText.log:1161
-#: ../getText.log:1162 ../getText.log:1163 ../getText.log:1164
-#: ../getText.log:1165 ../getText.log:1166 ../getText.log:1167
-#: ../getText.log:1168 ../getText.log:1169 ../getText.log:1170
-#: ../getText.log:1171 ../getText.log:1172 ../getText.log:1173
-#: ../getText.log:1174 ../getText.log:1175 ../getText.log:1176
-#: ../getText.log:1177 ../getText.log:1178 ../getText.log:1179
-#: ../getText.log:1180 ../getText.log:1181 ../getText.log:1182
-#: ../getText.log:1183 ../getText.log:1184 ../getText.log:1185
-#: ../getText.log:1186 ../getText.log:1187 ../getText.log:1188
-#: ../getText.log:1189 ../getText.log:1190 ../getText.log:1191
-#: ../getText.log:1192 ../getText.log:1193 ../getText.log:1212
-#: ../getText.log:1213 ../getText.log:1214 ../getText.log:1215
-#: ../getText.log:1216 ../getText.log:1217 ../getText.log:1218
-#: ../getText.log:1219 ../getText.log:1220 ../getText.log:1221
-#: ../getText.log:1367 ../getText.log:1412 ../getText.log:1413
-#: ../getText.log:1414 ../getText.log:1415 ../getText.log:1416
-#: ../getText.log:1417 ../getText.log:1418 ../getText.log:1442
-#: ../getText.log:1462 ../getText.log:1463 ../getText.log:1483
-#: ../getText.log:1538 ../getText.log:1577 ../getText.log:1616
-#: ../getText.log:20 ../getText.log:63 ../getText.log:123 ../getText.log:162
-#: ../getText.log:184 ../getText.log:223 ../getText.log:251 ../getText.log:271
-#: ../getText.log:291 ../getText.log:317 ../getText.log:337 ../getText.log:338
-#: ../getText.log:365 ../getText.log:387 ../getText.log:388 ../getText.log:430
-#: ../getText.log:450 ../getText.log:470 ../getText.log:490 ../getText.log:491
-#: ../getText.log:492 ../getText.log:493 ../getText.log:494 ../getText.log:517
-#: ../getText.log:539 ../getText.log:559 ../getText.log:579 ../getText.log:601
-#, c-format
-msgid "Probability mass function of B(%i; %.2f)"
-msgstr "Wahrscheinlichkeitsfunktion für B(%i; %.2f)"
+#: getText.log:78 getText.log:90 getText.log:100 getText.log:110
+#: getText.log:126 getText.log:140 getText.log:457 getText.log:469
+#: getText.log:480 getText.log:496 getText.log:511 getText.log:527
+#: getText.log:548 getText.log:565 getText.log:585 getText.log:601
+#: getText.log:1109 getText.log:1125 getText.log:1198 getText.log:1218
+#: getText.log:1242 getText.log:1262 getText.log:1282
+msgid "Select a distribution type"
+msgstr "Wählen Sie eine Verteilung"
 
-#: ../getText.log:1004 ../getText.log:1006 ../getText.log:1032
-#: ../getText.log:1033 ../getText.log:1034 ../getText.log:1035
-#: ../getText.log:1036 ../getText.log:1056 ../getText.log:1057
-#: ../getText.log:1078 ../getText.log:1099 ../getText.log:1556
-#, c-format
-msgid "Cumulative distribution function of B(%i; %.2f)"
-msgstr "Verteilungsfunktion für B(%i; %.2f)"
-
-#: ../getText.log:1105 ../getText.log:1387 ../getText.log:1419
-#: ../getText.log:1420 ../getText.log:1421 ../getText.log:1422
-#: ../getText.log:1503 ../getText.log:1504 ../getText.log:1505
-#: ../getText.log:1506 ../getText.log:1507 ../getText.log:1508
-#: ../getText.log:1509 ../getText.log:1510 ../getText.log:1511
-#: ../getText.log:1512 ../getText.log:1513 ../getText.log:1514
-#: ../getText.log:1515 ../getText.log:1516 ../getText.log:1517
-#: ../getText.log:1518 ../getText.log:1539 ../getText.log:1540
-#: ../getText.log:1541 ../getText.log:1542 ../getText.log:1543
-#: ../getText.log:1544 ../getText.log:1545 ../getText.log:1546
-#: ../getText.log:1547 ../getText.log:1548 ../getText.log:1549
-#: ../getText.log:1550 ../getText.log:40 ../getText.log:41 ../getText.log:42
-#: ../getText.log:102 ../getText.log:163 ../getText.log:389 ../getText.log:390
-#: ../getText.log:391 ../getText.log:392 ../getText.log:393 ../getText.log:394
-#: ../getText.log:395 ../getText.log:396 ../getText.log:397 ../getText.log:398
-#: ../getText.log:399 ../getText.log:400 ../getText.log:401 ../getText.log:402
-#: ../getText.log:403 ../getText.log:404 ../getText.log:405 ../getText.log:406
-#: ../getText.log:407 ../getText.log:408 ../getText.log:409 ../getText.log:410
-#: ../getText.log:518 ../getText.log:519
-#, c-format
-msgid "Probability mass function of H(%i; %i; %i)"
-msgstr "Wahrscheinlichkeitsfunktion für H(%i; %i; %i)"
-
-#: ../getText.log:1388 ../getText.log:1389 ../getText.log:1390
-#: ../getText.log:1636 ../getText.log:103 ../getText.log:164
-#: ../getText.log:224 ../getText.log:226 ../getText.log:228 ../getText.log:230
-#: ../getText.log:292 ../getText.log:293 ../getText.log:294 ../getText.log:295
-#: ../getText.log:296 ../getText.log:297 ../getText.log:339 ../getText.log:340
-#: ../getText.log:341 ../getText.log:342 ../getText.log:343 ../getText.log:344
-#: ../getText.log:345 ../getText.log:366 ../getText.log:367 ../getText.log:495
-#: ../getText.log:496 ../getText.log:497 ../getText.log:580 ../getText.log:581
-#, c-format
-msgid "Probability mass function of Po(%.2f)"
-msgstr "Wahrscheinlichkeitsfunktion für Po(%.2f)"
-
-#: ../getText.log:1637 ../getText.log:225 ../getText.log:227
-#: ../getText.log:229 ../getText.log:231
-#, c-format
-msgid "Cumulative distribution function of Po(%.2f)"
-msgstr "Verteilungsfunktion für Po(%2.f)"
-
-#: ../getText.log:43
-#, c-format
-msgid "Cumulative distribution function of H(%i; %i; %i)"
-msgstr "Verteilungsfunktion für H(%i; %i; %i)"
-
-#: ../getText.log:603 ../getText.log:618 ../getText.log:633 ../getText.log:649
-#: ../getText.log:664 ../getText.log:679 ../getText.log:694 ../getText.log:719
-#: ../getText.log:778 ../getText.log:794 ../getText.log:810
+#: getText.log:79 getText.log:91 getText.log:101 getText.log:458
+#: getText.log:470 getText.log:512 getText.log:528 getText.log:549
+#: getText.log:566 getText.log:586 getText.log:602 getText.log:1110
+#: getText.log:1126
 msgid "Exponential distribution"
 msgstr "Exponentialverteilung"
 
-#: ../getText.log:604 ../getText.log:619 ../getText.log:634 ../getText.log:650
-#: ../getText.log:665 ../getText.log:680 ../getText.log:695 ../getText.log:720
-#: ../getText.log:779 ../getText.log:795 ../getText.log:811
+#: getText.log:80 getText.log:92 getText.log:102 getText.log:459
+#: getText.log:471 getText.log:513 getText.log:529 getText.log:550
+#: getText.log:567 getText.log:587 getText.log:603 getText.log:1111
+#: getText.log:1127
 msgid "Normal distribution"
 msgstr "Normalverteilung"
 
-#: ../getText.log:647 ../getText.log:708 ../getText.log:724 ../getText.log:725
-#: ../getText.log:726 ../getText.log:727 ../getText.log:728 ../getText.log:729
-#: ../getText.log:730 ../getText.log:731 ../getText.log:732 ../getText.log:733
-#: ../getText.log:734 ../getText.log:792 ../getText.log:808 ../getText.log:825
+#: getText.log:81 getText.log:93 getText.log:103 getText.log:119
+#: getText.log:135 getText.log:149 getText.log:460 getText.log:472
+#: getText.log:489 getText.log:505 getText.log:514 getText.log:530
+#: getText.log:551 getText.log:568 getText.log:588 getText.log:604
+#: getText.log:1112 getText.log:1128 getText.log:1207 getText.log:1227
+#: getText.log:1251 getText.log:1271 getText.log:1291 getText.log:1484
+#: getText.log:1488 getText.log:1492
+msgid "Intensity"
+msgstr "Intensität"
+
+#: getText.log:82 getText.log:94 getText.log:104 getText.log:461
+#: getText.log:473 getText.log:515 getText.log:531 getText.log:552
+#: getText.log:569 getText.log:589 getText.log:605 getText.log:1113
+#: getText.log:1129 getText.log:1496 getText.log:1501 getText.log:1506
+#: getText.log:1511 getText.log:1516 getText.log:1521 getText.log:1526
+msgid "&mu;"
+msgstr "&mu;"
+
+#: getText.log:83 getText.log:95 getText.log:105 getText.log:462
+#: getText.log:474 getText.log:516 getText.log:532 getText.log:553
+#: getText.log:570 getText.log:590 getText.log:606 getText.log:1114
+#: getText.log:1130 getText.log:1497 getText.log:1502 getText.log:1507
+#: getText.log:1512 getText.log:1517 getText.log:1522 getText.log:1527
+msgid "&sigma;"
+msgstr "&sigma;"
+
+#: getText.log:88 getText.log:467 getText.log:526 getText.log:542
+#: getText.log:543 getText.log:544 getText.log:545 getText.log:546
+#: getText.log:547 getText.log:563 getText.log:564 getText.log:580
+#: getText.log:581 getText.log:582 getText.log:583 getText.log:584
+#: getText.log:600 getText.log:1124
 #, c-format
 msgid "Probability density function of Exp(%.2f)"
 msgstr "Wahrscheinlichkeitsdichte für Exp(%.2f)"
 
-#: ../getText.log:735 ../getText.log:736 ../getText.log:737 ../getText.log:738
-#: ../getText.log:739 ../getText.log:740 ../getText.log:741 ../getText.log:742
-#: ../getText.log:743 ../getText.log:744 ../getText.log:745 ../getText.log:746
-#: ../getText.log:747 ../getText.log:748 ../getText.log:749 ../getText.log:750
-#: ../getText.log:751 ../getText.log:752 ../getText.log:753 ../getText.log:754
-#: ../getText.log:755 ../getText.log:756 ../getText.log:757 ../getText.log:758
-#: ../getText.log:759 ../getText.log:760 ../getText.log:824
+#: getText.log:111 getText.log:127 getText.log:141 getText.log:481
+#: getText.log:497 getText.log:1199 getText.log:1219 getText.log:1243
+#: getText.log:1263 getText.log:1283
+msgid "Binomial distribution"
+msgstr "Binomialverteilung"
+
+#: getText.log:112 getText.log:128 getText.log:142 getText.log:482
+#: getText.log:498 getText.log:1200 getText.log:1220 getText.log:1244
+#: getText.log:1264 getText.log:1284
+msgid "Hypergeometric distribution"
+msgstr "Hypergeometrische Verteilung"
+
+#: getText.log:113 getText.log:129 getText.log:143 getText.log:483
+#: getText.log:499 getText.log:1201 getText.log:1221 getText.log:1245
+#: getText.log:1265 getText.log:1285
+msgid "Poisson distribution"
+msgstr "Poisson Verteilung"
+
+#: getText.log:114 getText.log:118 getText.log:130 getText.log:134
+#: getText.log:144 getText.log:148 getText.log:484 getText.log:488
+#: getText.log:500 getText.log:504 getText.log:1202 getText.log:1206
+#: getText.log:1222 getText.log:1226 getText.log:1246 getText.log:1250
+#: getText.log:1266 getText.log:1270 getText.log:1286 getText.log:1290
+#: getText.log:1359 getText.log:1364 getText.log:1369 getText.log:1374
+#: getText.log:1456 getText.log:1462 getText.log:1468 getText.log:1621
+#: getText.log:1626 getText.log:1631 getText.log:1640 getText.log:1669
+#: getText.log:1674 getText.log:1679 getText.log:1693 getText.log:1698
+#: getText.log:1703 getText.log:1708 getText.log:1713 getText.log:1718
+#: getText.log:1723 getText.log:1728 getText.log:1733 getText.log:1738
+#: getText.log:1743 getText.log:1748 getText.log:1753 getText.log:1758
+#: getText.log:1763 getText.log:1768 getText.log:1773 getText.log:1778
+#: getText.log:1783 getText.log:1788 getText.log:1793 getText.log:1798
+#: getText.log:1803 getText.log:1808 getText.log:1813 getText.log:1818
+#: getText.log:1823 getText.log:1828 getText.log:1833
+msgid "Number of draws"
+msgstr "Anzahl der Ziehungen"
+
+#: getText.log:115 getText.log:131 getText.log:145 getText.log:485
+#: getText.log:501 getText.log:1203 getText.log:1223 getText.log:1247
+#: getText.log:1267 getText.log:1287 getText.log:1360 getText.log:1365
+#: getText.log:1370 getText.log:1375 getText.log:1622 getText.log:1627
+#: getText.log:1632 getText.log:1641 getText.log:1670 getText.log:1675
+#: getText.log:1680 getText.log:1694 getText.log:1699 getText.log:1704
+#: getText.log:1709 getText.log:1714 getText.log:1719 getText.log:1724
+#: getText.log:1729 getText.log:1734 getText.log:1739 getText.log:1744
+#: getText.log:1749 getText.log:1754 getText.log:1759 getText.log:1764
+#: getText.log:1769 getText.log:1774 getText.log:1779 getText.log:1784
+#: getText.log:1789 getText.log:1794 getText.log:1799 getText.log:1804
+#: getText.log:1809 getText.log:1814 getText.log:1819 getText.log:1824
+#: getText.log:1829 getText.log:1834
+msgid "Probability of success per draw"
+msgstr "Erfolgswahrscheinlichkeit pro Ziehung"
+
+#: getText.log:116 getText.log:132 getText.log:146 getText.log:486
+#: getText.log:502 getText.log:1204 getText.log:1224 getText.log:1248
+#: getText.log:1268 getText.log:1288 getText.log:1454 getText.log:1460
+#: getText.log:1466
+msgid "Population size"
+msgstr "Umfang der Grundgesamtheit"
+
+#: getText.log:117 getText.log:133 getText.log:147 getText.log:487
+#: getText.log:503 getText.log:1205 getText.log:1225 getText.log:1249
+#: getText.log:1269 getText.log:1289 getText.log:1455 getText.log:1461
+#: getText.log:1467
+msgid "Number of success states in the population"
+msgstr "Anzahl möglicher Erfolge in der Grundgesamtheit"
+
+#: getText.log:124 getText.log:494 getText.log:1217 getText.log:1237
+#: getText.log:1238 getText.log:1239 getText.log:1240 getText.log:1241
+#: getText.log:1261 getText.log:1281
+#, c-format
+msgid "Probability mass function of B(%i; %.2f)"
+msgstr "Wahrscheinlichkeitsfunktion für B(%i; %.2f)"
+
+#: getText.log:255 getText.log:306 getText.log:311 getText.log:316
+#: getText.log:321 getText.log:326 getText.log:331 getText.log:336
+#: getText.log:341 getText.log:346 getText.log:351 getText.log:356
+#: getText.log:361 getText.log:366 getText.log:371 getText.log:376
+#: getText.log:381 getText.log:386 getText.log:391 getText.log:396
+#: getText.log:401 getText.log:406 getText.log:411 getText.log:416
+#: getText.log:421 getText.log:426 getText.log:431 getText.log:436
+#: getText.log:441 getText.log:446 getText.log:451
+msgid "CHISQUARE.C"
+msgstr ""
+
+#: getText.log:256 getText.log:307 getText.log:312 getText.log:317
+#: getText.log:322 getText.log:327 getText.log:332 getText.log:337
+#: getText.log:342 getText.log:347 getText.log:352 getText.log:357
+#: getText.log:362 getText.log:367 getText.log:372 getText.log:377
+#: getText.log:382 getText.log:387 getText.log:392 getText.log:397
+#: getText.log:402 getText.log:407 getText.log:412 getText.log:417
+#: getText.log:422 getText.log:427 getText.log:432 getText.log:437
+#: getText.log:442 getText.log:447 getText.log:452
+msgid "CHISQUARE.CC"
+msgstr ""
+
+#: getText.log:257 getText.log:308 getText.log:313 getText.log:318
+#: getText.log:323 getText.log:328 getText.log:333 getText.log:338
+#: getText.log:343 getText.log:348 getText.log:353 getText.log:358
+#: getText.log:363 getText.log:368 getText.log:373 getText.log:378
+#: getText.log:383 getText.log:388 getText.log:393 getText.log:398
+#: getText.log:403 getText.log:408 getText.log:413 getText.log:418
+#: getText.log:423 getText.log:428 getText.log:433 getText.log:438
+#: getText.log:443 getText.log:448 getText.log:453
+msgid "CHISQUARE.VAL"
+msgstr ""
+
+#: getText.log:258 getText.log:309 getText.log:314 getText.log:319
+#: getText.log:324 getText.log:329 getText.log:334 getText.log:339
+#: getText.log:344 getText.log:349 getText.log:354 getText.log:359
+#: getText.log:364 getText.log:369 getText.log:374 getText.log:379
+#: getText.log:384 getText.log:389 getText.log:394 getText.log:399
+#: getText.log:404 getText.log:409 getText.log:414 getText.log:419
+#: getText.log:424 getText.log:429 getText.log:434 getText.log:439
+#: getText.log:444 getText.log:449 getText.log:454
+msgid "CHISQUARE.V"
+msgstr ""
+
+#: getText.log:259 getText.log:263 getText.log:266 getText.log:270
+#: getText.log:274 getText.log:278 getText.log:282 getText.log:286
+#: getText.log:290 getText.log:294 getText.log:298 getText.log:301
+#: getText.log:305 getText.log:310 getText.log:315 getText.log:320
+#: getText.log:325 getText.log:330 getText.log:335 getText.log:340
+#: getText.log:345 getText.log:350 getText.log:355 getText.log:360
+#: getText.log:365 getText.log:370 getText.log:375 getText.log:380
+#: getText.log:385 getText.log:390 getText.log:395 getText.log:400
+#: getText.log:405 getText.log:410 getText.log:415 getText.log:420
+#: getText.log:425 getText.log:430 getText.log:435 getText.log:440
+#: getText.log:445 getText.log:450 getText.log:455
+msgid "Coefficient value(s)"
+msgstr "Koeffizientenwert"
+
+#: getText.log:260 getText.log:302
+msgid "GKLAMBDA.CR"
+msgstr ""
+
+#: getText.log:261 getText.log:303
+msgid "GKLAMBDA.RC"
+msgstr ""
+
+#: getText.log:262 getText.log:304
+msgid "GKLAMBDA.SYM"
+msgstr ""
+
+#: getText.log:264 getText.log:299
+msgid "GKTAU.RC"
+msgstr ""
+
+#: getText.log:265 getText.log:300
+msgid "GKTAU.CR"
+msgstr ""
+
+#: getText.log:267 getText.log:271 getText.log:275 getText.log:279
+#: getText.log:283 getText.log:287 getText.log:291 getText.log:295
+msgid "THEILU.RC"
+msgstr ""
+
+#: getText.log:268 getText.log:272 getText.log:276 getText.log:280
+#: getText.log:284 getText.log:288 getText.log:292 getText.log:296
+msgid "THEILU.CR"
+msgstr ""
+
+#: getText.log:269 getText.log:273 getText.log:277 getText.log:281
+#: getText.log:285 getText.log:289 getText.log:293 getText.log:297
+msgid "THEILU.SYM"
+msgstr ""
+
+#: getText.log:478
 #, c-format
 msgid "Probability density function of N(%.2f; %.2f)"
 msgstr "Wahrscheinlichkeitsdichte für N(%.2f; %.2f)"
 
-#: ../getText.log:761 ../getText.log:762 ../getText.log:763 ../getText.log:764
-#: ../getText.log:765
+#: getText.log:509
 #, c-format
-msgid "Cumulative distribution function of N(%.2f; %.2f)"
-msgstr "Verteilungsfunktion für N(%.2f; %.2f)"
+msgid "Probability mass function of H(%i; %i; %i)"
+msgstr "Wahrscheinlichkeitsfunktion für H(%i; %i; %i)"
 
-#: ../getText.log:766 ../getText.log:767 ../getText.log:768 ../getText.log:769
-#: ../getText.log:770 ../getText.log:771 ../getText.log:772 ../getText.log:773
-#: ../getText.log:774 ../getText.log:775 ../getText.log:776
+#: getText.log:510
 #, c-format
-msgid "Cumulative distribution function of Exp(%.2f)"
-msgstr "Verteilungsfunktion für Exp(%.2f)"
+msgid "Probability mass function of Po(%.2f)"
+msgstr "Wahrscheinlichkeitsfunktion für Po(%.2f)"
+
+#: getText.log:517 getText.log:533 getText.log:554 getText.log:571
+#: getText.log:591 getText.log:607 getText.log:1115 getText.log:1131
+#: getText.log:1208 getText.log:1228 getText.log:1252 getText.log:1272
+#: getText.log:1292
+msgid "Choose"
+msgstr "Wählen Sie"
+
+#: getText.log:518 getText.log:534 getText.log:555 getText.log:572
+#: getText.log:592 getText.log:608 getText.log:1116 getText.log:1132
+#: getText.log:1209 getText.log:1229 getText.log:1253 getText.log:1273
+#: getText.log:1293
+msgid "Probability mass function"
+msgstr "Wahrscheinlichkeitsfunktion"
+
+#: getText.log:519 getText.log:535 getText.log:556 getText.log:573
+#: getText.log:593 getText.log:609 getText.log:1117 getText.log:1133
+#: getText.log:1210 getText.log:1230 getText.log:1254 getText.log:1274
+#: getText.log:1294
+msgid "Cumulative distribution function"
+msgstr "Verteilungsfunktion"
+
+#: getText.log:520 getText.log:536 getText.log:557 getText.log:574
+#: getText.log:594 getText.log:610 getText.log:1118 getText.log:1134
+#: getText.log:1211 getText.log:1231 getText.log:1255 getText.log:1275
+#: getText.log:1295
+msgid "Refit axes"
+msgstr "Achsen anpassen"
+
+#: getText.log:626 getText.log:655 getText.log:684 getText.log:713
+#: getText.log:742 getText.log:771 getText.log:800 getText.log:829
+#: getText.log:858 getText.log:887 getText.log:916 getText.log:945
+#: getText.log:974 getText.log:1003 getText.log:1032 getText.log:1061
+#: getText.log:1090 getText.log:1150 getText.log:1179 getText.log:1311
+#: getText.log:1340
+msgid "Chi square"
+msgstr "Chi Quadrat"
+
+#: getText.log:627 getText.log:656 getText.log:685 getText.log:714
+#: getText.log:743 getText.log:772 getText.log:801 getText.log:830
+#: getText.log:859 getText.log:888 getText.log:917 getText.log:946
+#: getText.log:975 getText.log:1004 getText.log:1033 getText.log:1062
+#: getText.log:1091 getText.log:1151 getText.log:1180 getText.log:1312
+#: getText.log:1341
+msgid "Contingency"
+msgstr "Kontingenz"
+
+#: getText.log:628 getText.log:657 getText.log:686 getText.log:715
+#: getText.log:744 getText.log:773 getText.log:802 getText.log:831
+#: getText.log:860 getText.log:889 getText.log:918 getText.log:947
+#: getText.log:976 getText.log:1005 getText.log:1034 getText.log:1063
+#: getText.log:1092 getText.log:1152 getText.log:1181 getText.log:1313
+#: getText.log:1342
+msgid "Corrected contingency"
+msgstr "Korrigierte Kontingenz"
+
+#: getText.log:629 getText.log:658 getText.log:687 getText.log:716
+#: getText.log:745 getText.log:774 getText.log:803 getText.log:832
+#: getText.log:861 getText.log:890 getText.log:919 getText.log:948
+#: getText.log:977 getText.log:1006 getText.log:1035 getText.log:1064
+#: getText.log:1093 getText.log:1153 getText.log:1182 getText.log:1314
+#: getText.log:1343
+msgid "Cramers V/Phi"
+msgstr "Cramers V/Phi"
+
+#: getText.log:1379 getText.log:1383 getText.log:1387 getText.log:1636
+#: getText.log:1645 getText.log:1649 getText.log:1653 getText.log:1657
+#: getText.log:1661 getText.log:1665
+msgid "Confidence level (%)"
+msgstr "Konfidenzniveau (%)"
+
+#: getText.log:1531 getText.log:1535 getText.log:1539
+msgid "Percentage"
+msgstr "Anteilswert"
+
+#: getText.log:1543 getText.log:1547 getText.log:1551
+msgid "My slider"
+msgstr "Mein Schieberegler"
+
+#: getText.log:1555 getText.log:1559 getText.log:1563
+msgid "Significance level (%)"
+msgstr "Signifikanzniveau (%)"
+
+#: getText.log:1569 getText.log:1582 getText.log:1595
+msgid "CARS"
+msgstr "Auto"
+
+#: getText.log:1571 getText.log:1584 getText.log:1597
+msgid "DECATHLON"
+msgstr "Zehnkampf"
+
+#: getText.log:1615
+msgid "Sample size"
+msgstr "Stichprobengröße"
+
+#: getText.log:1616
+msgid "Draw sample"
+msgstr "Ziehe Stichprobe"
+
+#: getText.log:1617
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+#: getText.log:1647 getText.log:1648 getText.log:1651 getText.log:1652
+#: getText.log:1655 getText.log:1656
+msgid "NA"
+msgstr "NA"
+
+#~ msgid "messages"
+#~ msgstr "Nachrichten"
+
+#~ msgid "Choose alternative"
+#~ msgstr "Alternativhypothese"
+
+#~ msgid "Hypothetical parameter"
+#~ msgstr "Hypothetischer Parameter"
+
+#~ msgid "Two sided"
+#~ msgstr "Zweiseitig"
+
+#~ msgid "Less"
+#~ msgstr "Kleiner"
+
+#~ msgid "Greater"
+#~ msgstr "Größer"
+
+#~ msgid "TELEPHONE"
+#~ msgstr "Telefonentwicklung"
+
+#~ msgid "Variable 1"
+#~ msgstr "Variable 1"
+
+#~ msgid "Variable 2"
+#~ msgstr "Variable 2"
+
+#~ msgid "Variable 3"
+#~ msgstr "Variable 3"
+
+#~ msgid "Cumulative distribution function of B(%i; %.2f)"
+#~ msgstr "Verteilungsfunktion für B(%i; %.2f)"
+
+#~ msgid "Cumulative distribution function of Po(%.2f)"
+#~ msgstr "Verteilungsfunktion für Po(%2.f)"
+
+#~ msgid "Cumulative distribution function of H(%i; %i; %i)"
+#~ msgstr "Verteilungsfunktion für H(%i; %i; %i)"
+
+#~ msgid "Cumulative distribution function of N(%.2f; %.2f)"
+#~ msgstr "Verteilungsfunktion für N(%.2f; %.2f)"
+
+#~ msgid "Cumulative distribution function of Exp(%.2f)"
+#~ msgstr "Verteilungsfunktion für Exp(%.2f)"
